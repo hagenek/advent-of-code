@@ -199,6 +199,8 @@ const numbers = `1688
 1564
 1572`
 
+// Advent of Code - Day One =) 
+
 const find2020 = (arr) => {
   for (let i = 0; i < arr.length - 1; i++) {
     for(let j = 1; j < arr.length; j++) {
