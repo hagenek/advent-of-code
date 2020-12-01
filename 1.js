@@ -1,3 +1,13 @@
+const find2020 = (arr) => {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for(let j = 1; j < arr.length; j++) {
+      if ((arr[i] + arr[j]) === 2020) {
+        return (arr[i] * arr[j])
+      }
+    }
+}
+}
+
 const numbers = `1688
 1463
 1461
@@ -201,17 +211,5 @@ const numbers = `1688
 
 // Advent of Code - Day One =) 
 
-const find2020 = (arr) => {
-  for (let i = 0; i < arr.length - 1; i++) {
-    for(let j = 1; j < arr.length; j++) {
-      if ((arr[i] + arr[j]) === 2020) {
-        return (arr[i] * arr[j])
-      }
-    }
-}
-}
-console.log(numbers.split(/\r?\n|\r/).map(s => parseInt(s)));
 const numberArray = numbers.split(/\r?\n|\r/).map(s => parseInt(s))
-//console.log(numbers.match(/\r?\n|\r/g))
-// console.log(numbers.split().map(s => s.replace(/\n/, '')))
 console.log(find2020(numberArray))
