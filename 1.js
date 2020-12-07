@@ -8,6 +8,19 @@ const find2020 = (arr) => {
 }
 }
 
+const find2020three = (arr) => {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for(let j = 1; j < arr.length; j++) {
+      for(let x = 2; x < arr.length; x++) {
+          if ((arr[i] + arr[j] + arr[x]) === 2020) {
+            console.log(arr[i], arr[j], arr[x])
+              return (arr[i] * arr[j] * arr[x])
+          }
+      }
+      }
+    }
+}
+
 const numbers = `1688
 1463
 1461
@@ -212,4 +225,6 @@ const numbers = `1688
 // Advent of Code - Day One =) 
 
 const numberArray = numbers.split(/\r?\n|\r/).map(s => parseInt(s))
-console.log(find2020(numberArray))
+// console.log(find2020(numberArray))
+console.log(find2020)
+console.log(find2020three(numberArray))
