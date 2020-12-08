@@ -30,3 +30,12 @@
 (def input
   (map parse-line (line-seq (io/reader (io/resource "input.txt")))))
 
+(filter entry-ok? input)
+
+(defn entry-ok?2 [[min max char pwd]]
+  (let [ok1 (= (nth pwd (dec min)) char)
+        ok2 (= (nth pwd (dec max)) char)]
+    (not= ok1 ok2)))
+
+(count (filter entry-ok?2 input))
+
