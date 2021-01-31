@@ -5,7 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.25.8"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.25.8"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -15,14 +15,917 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉day5.core꞉> 
+clj꞉day5.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
-clj꞉day5.core꞉>  (math/floor (/ 127 2))
-64N
-clj꞉day5.core꞉>  (math/floor (/ 127 2))
-63N
-clj꞉day5.core꞉> 63
-63
-clj꞉day5.core꞉>  (type (math/floor (/ 127 2)))
-clojure.lang.BigInt
+clj꞉day5.core꞉>  (find-missing-seat sorted-list)
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\.calva\output-window\output.calva-repl:20:17).
+; Unable to resolve symbol: find-missing-seat in this context
+clj꞉day5.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:77:5).
+; Unable to resolve symbol: orintln in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉day5.core꞉> 
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+; Execution error (IllegalStateException) at day5.core/eval7370 (form-init5597837523255060136.clj:31).
+; Attempting to call unbound fn: #'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:77:5).
+; Unable to resolve symbol: orintln in this context
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:77:5).
+; Unable to resolve symbol: orintln in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉day5.core꞉> 
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+; Execution error (NullPointerException) at day5.core/find-missing-seat (form-init5597837523255060136.clj:77).
+; null
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+1N
+; Execution error (ClassCastException) at day5.core/find-missing-seat (form-init5597837523255060136.clj:78).
+; class clojure.lang.ArraySeq cannot be cast to class clojure.lang.IFn (clojure.lang.ArraySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+1N
+76N
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+; Evaluating file: core.clj
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+1N
+; Execution error (NullPointerException) at day5.core/find-missing-seat (core.clj:77).
+; null
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+; Execution error (NullPointerException) at day5.core/find-missing-seat (form-init5597837523255060136.clj:77).
+; null
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+; Evaluating file: core.clj
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+(738N
+ 740N
+ 741N
+ 742N
+ 743N
+ 744N
+ 745N
+ 746N
+ 747N
+ 748N
+ 749N
+ 750N
+ 751N
+ 752N
+ 753N
+ 754N
+ 755N
+ 756N
+ 757N
+ 758N
+ 759N
+ 760N
+ 761N
+ 762N
+ 763N
+ 764N
+ 765N
+ 766N
+ 767N
+ 768N
+ 769N
+ 770N
+ 771N
+ 772N
+ 773N
+ 774N
+ 775N
+ 776N
+ 777N
+ 778N
+ 779N
+ 780N
+ 781N
+ 782N
+ 783N
+ 784N
+ 785N
+ 786N
+ 787N
+ 788N
+ ...)
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
+(find-missing-seat sorted-list)
+739N
 clj꞉day5.core꞉> 
