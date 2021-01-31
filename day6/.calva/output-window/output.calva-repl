@@ -1,0 +1,328 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.25.8"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉day6.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉day6.core꞉> 
+["abc" "" "a" "b" "c" "" "ab" "ac" "" "a" "a" "a" "a" "" "b"]
+clj꞉day6.core꞉> 
+; Syntax error reading source at (REPL:21:28).
+; Unmatched delimiter: )
+clj꞉day6.core꞉> 
+; Syntax error reading source at (REPL:21:28).
+; Unmatched delimiter: )
+clj꞉day6.core꞉> 
+; Syntax error reading source at (REPL:21:28).
+; Unmatched delimiter: )
+clj꞉day6.core꞉> 
+["abc" "a\nb\nc" "ab\nac" "a\na\na\na" "b"]
+clj꞉day6.core꞉> 
+; Execution error (ArityException) at day6.core/eval7145 (form-init14037486012135261942.clj:21).
+; Wrong number of args (2) passed to: clojure.string/replace
+clj꞉day6.core꞉> 
+"[\"abc\" \"a\\nb\\nc\" \"ab\\nac\" \"a\\na\\na\\na\" \"b\"]"
+clj꞉day6.core꞉> 
+; Execution error (ClassCastException) at day6.core/eval7149 (form-init14037486012135261942.clj:21).
+; class java.util.regex.Pattern cannot be cast to class java.lang.CharSequence (java.util.regex.Pattern and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉day6.core꞉> 
+"\n[\n\"\na\nb\nc\n\"\n \n\"\na\n\\\nn\nb\n\\\nn\nc\n\"\n \n\"\na\nb\n\\\nn\na\nc\n\"\n \n\"\na\n\\\nn\na\n\\\nn\na\n\\\nn\na\n\"\n \n\"\nb\n\"\n]\n"
+clj꞉day6.core꞉> 
+["abc" "a\nb\nc" "ab\nac" "a\na\na\na" "b"]
+clj꞉day6.core꞉> 
+#{\a \b \c}
+clj꞉day6.core꞉> 
+#{\a \b \c \newline}
+clj꞉day6.core꞉> 
+"abac"
+clj꞉day6.core꞉> 
+; Execution error (ArityException) at day6.core/eval7161 (form-init14037486012135261942.clj:21).
+; Wrong number of args (5) passed to: clojure.string/trim-newline
+clj꞉day6.core꞉> 
+("abc" "a\nb\nc" "ab\nac" "a\na\na\na" "b")
+clj꞉day6.core꞉> 
+"ab\nac"
+clj꞉day6.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day6\src\day6\core.clj:24:1).
+; Unable to resolve symbol: remove-newlines in this context
+clj꞉day6.core꞉> 
+#'day6.core/remove-newlines
+clj꞉day6.core꞉> 
+; Execution error (ArityException) at day6.core/eval7169 (form-init14037486012135261942.clj:24).
+; Wrong number of args (5) passed to: day6.core/remove-newlines
+clj꞉day6.core꞉> 
+; Evaluating file: core.clj
+#{\a \b \c \newline}
+clj꞉day6.core꞉> 
+("abc" "abc" "abac" "aaaa" "b")
+clj꞉day6.core꞉> 
+(#{\a \b \c} #{\a \b \c} #{\a \b \c} #{\a} #{\b})
+clj꞉day6.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: clojure.core$set
+clj꞉day6.core꞉> 
+(#{\a \b \c} #{\a \b \c} #{\a \b \c} #{\a} #{\b})
+clj꞉day6.core꞉> 
+; Execution error (ClassCastException) at day6.core/eval7210$fn (form-init14037486012135261942.clj:27).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉day6.core꞉> 
+#'day6.core/sum-length
+clj꞉day6.core꞉> 
+11
+clj꞉day6.core꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ..\..\resources\input.txt (Systemet finner ikke angitt bane)
+clj꞉day6.core꞉> 
+"xav\r\nuavx\r\nxavsi\r\nyavx\r\n\r\nefokjptizdcwmqnuh\r\nqgfdvurtnjwpichxk\r\ntaqkcunfzpmydiwjsh\r\n\r\nmzbg\r\ntmg\r\nrlvge\r\nhgpbzn\r\ncagkijyu\r\n\r\nahynbmqljzpwxokcfrtsgeud\r\nxwzcmdhkrjnupegqlyoaft\r\nfjnurhzoqmgwacxdlypkte\r\nqwrjxahtlnzcfdouepmkgy\r\nezpqxfcmgrnhylukwajotd\r\n\r\njrxcnyadsgbtpvoze\r\nsecpytarvdzjgb\r\nycsfzgtedarbjvp\r\ntsgejyzcdbvpra\r\nygtbvzredpacjs\r\n\r\nn\r\nn\r\ns\r\nn\r\nn\r\n\r\nmgfb\r\nmfg\r\n\r\nxfjengy\r\npubw\r\nisroqb\r\n\r\nhcnkeawlbfso\r\ntwocmsbefvlp\r\nacwyseblorf\r\nlosebfcw\r\n\r\ndixstroacjbygqpewvk\r\nmdcpbnfqsgxvaikwujtr\r\n\r\nu\r\nuvk\r\n\r\nvpuzogn\r\nlmhxvfgkdnspq\r\njpvzogntyr\r\najpngbcivw\r\n\r\nbip\r\nitb\r\n\r\nuvqldphg\r\nedpgfh\r\n\r\ngm\r\nmgfs\r\nmg\r\nmgq\r\ngm\r\n\r\ngtkm\r\nwkcgmsvda\r\ngmksap\r\nmkupgt\r\ngekrbimhj\r\n\r\nhknejx\r\nwjn\r\njano\r\njvwnb\r\nujnic\r\n\r\nvkzmgdb\r\nzbgvd\r\nbzdgv\r\ngbvdz\r\nzdbvg\r\n\r\nsedcuh\r\naxyeqbs\r\n\r\nckysjbmawxpedqov\r\nilqcuxpvajwmfyko\r\n\r\nxcv\r\nxhevkc\r\nvfxcy\r\nwcvfx\r\ncjxv\r\n\r\nwetaojdqkip\r\nkyedwuprqast\r\ntadubqkflp\r\nyanpslwqdtik\r\nzmgacdpkxq\r\n\r\nakdhyogxqf\r\nktnyzhxoaqfgwd\r\n\r\ndbnezgquatrm\r\newnqlzdjcgb\r\nhnzdebjgql\r\n\r\naoxjcbpzisfmkewqlngduytv\r\ndifaqevcgyukztjwpmbsxonr\r\n\r\ngrptdzn\r\npzctgolskr\r\n\r\nkvyjetqndhf\r\nyetdvnqkf\r\nsvwdpxqgeianfk\r\n\r\ntmyreouwn\r\ntorwnaeumy\r\ntsewnmzypo\r\nemosthywn\r\nmjtkevnqcbdiwoxy\r\n\r\nzstlfpnavdwyicuhb\r\ntwlpczyhunivda\r\novnuwycptldhzai\r\npcyhdwtuianlvz\r\n\r\nkwvaunqjryxtpz\r\nwflvuzhnxmecokiyjts\r\n\r\nkjcqzvhseaf\r\nqgfmhsekjctv\r\n\r\ntcpvqdrnghflmjoxawe\r\nmdplxfqnovejsgazcrh\r\nqxkhmvbpdoegnfjrlac\r\n\r\nixzcphskly\r\ngsxioyzcahkl\r\n\r\nstjxfn\r\ncpdegihznsoyl\r\nvrujnsk\r\nwnsqmb\r\nnajbs\r\n\r\npxatigolezv\r\nxkbvuitegwmo\r\ngvijtmysxoe\r\nsvnxeqjogtik\r\nsoxevgqcit\r\n\r\notzmkhlquxwrani\r\neqdjfgmaor\r\n\r\nexz\r\nqze\r\nze\r\nze\r\n\r\nxwzapvtqrgecjisfunkhd\r\nqefspnwtkijacuhdgrz\r\nzqjkasgnferutdwhcbpi\r\nrwapenikhdjcsqfzgubt\r\n\r\nfmjeqdaivksonr\r\npfeljvbqdsormxh\r\nuywvtceosm\r\n\r\nzhlao\r\nhe\r\nh\r\n\r\nqnyhtezxjdvpfkcsio\r\nnvchtzepkqjoisdyfx\r\nvifhcnxstzjpedoykq\r\nqsivneohjzpbdcymlgxfkt\r\nsxvkpohctnjfyqezid\r\n\r\nndzhflc\r\nzfdcnh\r\nfchznd\r\n\r\nnrvde\r\nramndvu\r\n\r\ntskgvzqmun\r\nszckqgbvmnw\r\nzvmsnrygaq\r\nvcqmstinzg\r\njlospfehmzvndxgq\r\n\r\nbtlfvysaqerchkiux\r\ntlyxhkrvbqufsecai\r\nvfturxsbayicheqlk\r\nsruhcbeqktixvfayl\r\n\r\nvam\r\nmv\r\nvm\r\nvm\r\nvm\r\n\r\nk\r\nk\r\nk\r\nk\r\nk\r\n\r\nysmikquxzc\r\nyetmlxqsziu\r\n\r\nornk\r\norkn\r\nrkno\r\nkoirn\r\nonyrk\r\n\r\nqcajzosf\r\nsofdacj\r\najoscf\r\ndjfscaeo\r\nfosejac\r\n\r\nrkqghbxjdol\r\nuqbdhjkm\r\njhbd\r\ncbtvadiehj\r\nhfdbrj\r\n\r\nnsklymutzivw\r\nmounvbpwdg\r\n\r\nsdpgvajmexuyqhcriok\r\nvjksamihwpdrcxqguy\r\nxjsevuydcamkihoqgpr\r\nmjtcnqpgdhvuakfrbxyi\r\n\r\nhpoyrxfmcjld\r\ncxlpodryfmjh\r\njhplfcrydxmo\r\n\r\nkembuivdhf\r\nipefszdh\r\nenclshdbfk\r\ndhreytjwxqgfao\r\n\r\nlb\r\nlkr\r\n\r\nsmtknclagp\r\npcktnslgam\r\n\r\nbfsc\r\nynbf\r\nhbxklwfep\r\n\r\nye\r\nhaybes\r\ney\r\neyw\r\n\r\nta\r\ntan\r\njtap\r\ntah\r\nlcat\r\n\r\nikdqblgs\r\nmtwlvhnbkjsdic\r\nplzskbdi\r\n\r\nrctauyzbdklxvpmnwqjfe\r\nplhzdsnbmxqarwjktyfuice\r\n\r\nba\r\nab\r\nab\r\nbar\r\nab\r\n\r\ni\r\ni\r\ni\r\nv\r\n\r\nursqy\r\nqrwusy\r\nyrsuq\r\nqrsyu\r\nqursy\r\n\r\ncdgrouis\r\nocrigs\r\n\r\nvjwaiph\r\nypva\r\n\r\nyhuqbinztxg\r\nkuqxeogthpid\r\ngtmhiquxlw\r\ngxutsafqbih\r\n\r\nwmg\r\nwz\r\n\r\ngkpmdtwhnxzaoysjcevuir\r\nhoxmkyqdcwlnvgperszi\r\n\r\noqagy\r\nglxvkq\r\nsdzbreguiwjfm\r\n\r\nnabml\r\npfnyvatk\r\n\r\npu\r\npu\r\n\r\nhbivy\r\nbyuv\r\ntueovyb\r\n\r\nozqv\r\nqzon\r\n\r\nxjunwvbzdkqy\r\nchfosmgre\r\n\r\ndyn\r\nejxy\r\nxydq\r\nyx\r\niyp\r\n\r\nhskfyqgtbzrvu\r\nyvqhtgbuifrskz\r\nhzjqfuyrbvstgk\r\nzvkhtsfgryqbu\r\n\r\nons\r\nosne\r\nnous\r\nsuno\r\n\r\nzymjefdwxih\r\ndwxzyfjmieh\r\n\r\nib\r\nbia\r\n\r\nocagmvj\r\njvcagm\r\ngamcjv\r\nvjcamg\r\n\r\ninhlewtdbkxmpaqryg\r\nwnkpxrhlmigtaydbqe\r\noihnlytpwaxrbqekdmg\r\nmqabydwgterlphnkxi\r\n\r\nbjedsywlgnxmpotz\r\npxejsongtkumzbwld\r\nlpogxznbtwmsjed\r\ntzpuonmjxlwbesgd\r\n\r\nwqfsmektu\r\nwmftqs\r\nsqmtwf\r\ntqmscfw\r\ntqwmsf\r\n\r\nsnkpjbefqwhyriz\r\nikwrlqymjczfbevntps\r\nqhebojfnzrkwapmsi\r\nbegirdpqnjkwuzsf\r\niqtbhfzpenwkrjs\r\n\r\ny\r\ny\r\n\r\ngsf\r\ngcsh\r\najqgs\r\n\r\nulqbokwrjdcgpthniyxfzmeav\r\nrjbumtoxecngkdvazsfilw\r\n\r\nfwsrhjk\r\nhjrfwks\r\nkfjrhsw\r\njrhkfsw\r\n\r\nqktgsvplh\r\nhgol\r\nhgly\r\n\r\nqftenaodxkwz\r\nbwtxaqviof\r\n\r\nugzpmhefkj\r\nkgemzusfpjhd\r\nekfjlhpmguz\r\nkxuepjgonfyhzq\r\nkuzgitlhfjep\r\n\r\njywhzcrqa\r\notznge\r\nmbuvfsk\r\n\r\niwhekorjgqtsdb\r\nkjgswlbqherodti\r\nokirgdnejtxwbqhs\r\nezobksgqrajhwdti\r\n\r\nrdcoaubxhkitwsvpzygflmqnj\r\ntcnfguzdybojqvwishrlapmkx\r\nsmjnpglbkzuafqhtdoxwiycrv\r\nspgnmzlyurchxvwbojfqakidt\r\nkzdtmbslqyvxcrwnauhoijgfp\r\n\r\nkvwm\r\nmwvk\r\nkwvm\r\nkvwm\r\n\r\nhto\r\nrhg\r\nh\r\ntvhi\r\nvhfk\r\n\r\nwoxhpvfdlnezi\r\nwemd\r\ncqwkde\r\nsedwuq\r\nwcadtgrbe\r\n\r\nmoecds\r\nwscmbnoed\r\nsdycmeo\r\n\r\namnqlcytodvreiwkzgfxs\r\nvfwmayqsghdcjztxeornkuil\r\nxgaifqzdvowmknlysrtce\r\niynsxqwmafdvtklzregoc\r\n\r\nksvejm\r\neskmvj\r\nksmjve\r\nvhskemj\r\nekmsvj\r\n\r\nebfkazr\r\ndgqtkjmw\r\nclykap\r\nzukinrbh\r\n\r\noznuhklqijpmsxfcaryb\r\nhyikolbjusmxqcfnzarp\r\nuzxcbwqshkyamrielnopf\r\n\r\nzlpsua\r\nwlzdspu\r\nluzsp\r\n\r\nh\r\nhkr\r\nh\r\nlhc\r\nh\r\n\r\nzfugqrjipavboys\r\naurvpzfeosigjqy\r\nsrnqiejtoyupgvadfzb\r\noqryvigjzsuafp\r\nqgowivrzajsupfy\r\n\r\nmrotnsaivyxbwp\r\niapmtxsgbyodwr\r\nwoaxsyjicpbtrfm\r\n\r\nrdlakocwumetfpjs\r\ncshjuyxwgatvz\r\n\r\nwbxauycv\r\nxbwgaove\r\naxwnovb\r\nfwyxmvab\r\nxtiqwbsazvjpl\r\n\r\no\r\np\r\np\r\np\r\np\r\n\r\nombjurgkvceny\r\nilxtpwaz\r\n\r\ngzjpkewnfylari\r\nnlifyawpzgkjm\r\n\r\nymhesgwkxczrtbjnu\r\ncywuetkbhnsxjrzgm\r\nuwybxgsjnhremztkc\r\n\r\npcsxyiuvfnjbtkqwhlgzr\r\nixqnskyfwrtlgchbvjpzu\r\ncvuqazjkhbxtlyrnwgifs\r\n\r\nce\r\nec\r\ncge\r\necg\r\nyeh\r\n\r\nitfhrlsvgden\r\nsvhekgidlrnf\r\nnirlehsgfdv\r\nsginfeldrhv\r\nirsvdlfhegn\r\n\r\nw\r\ny\r\n\r\njqwevpgkzhdar\r\npazkvjqdrwh\r\nurzhvwkpaqd\r\n\r\nlsmqgjkb\r\nglmksbjq\r\nqsklgbjxm\r\n\r\niouyxrvbqjcemzlapk\r\novlkizemjyarbcupx\r\nzluckepmbrxivajyo\r\nzijoveubxmlpykrcad\r\n\r\ntjaruhsdgype\r\napmetysfkivjblqd\r\n\r\nztxyvufeh\r\ndmcaqrhfgs\r\n\r\nqfvujnhtaom\r\nuvqanhfo\r\n\r\ndxwvtmlsjqurepbgni\r\nbueiqjanvlpwr\r\nzlryojfupiqvec\r\n\r\ndopjewaytmg\r\namreytdslkgpw\r\npeymdawotxg\r\nuqyahptdxzgecwm\r\nvbohdafmpiwytge\r\n\r\nzdkalgubsqw\r\ndsazbkgluw\r\ndsuzgwlbak\r\n\r\nfibeyzxkmch\r\nfveymznaik\r\nvtyafiemkz\r\nerlfizymuk\r\n\r\nuti\r\nu\r\ngu\r\nu\r\nu\r\n\r\nkhqjtmswgl\r\npxnsqzgv\r\n\r\nuhkeosrgytcpbvmanqdlwjfz\r\nsingwfcorvzadktblmupejqy\r\nlezdusrpwbnfmkvjcxyogatq\r\n\r\nnqlmhgrp\r\ne\r\nsw\r\n\r\nhrmxwjzg\r\nwzrtpmah\r\nmrewhx\r\nywkbrnhmci\r\nrhomuvw\r\n\r\ncfpsboei\r\nwtifcoybpx\r\niofcpb\r\ncbpoisf\r\npcoibf\r\n\r\nx\r\ntx\r\nx\r\nxf\r\n\r\netvc\r\ncoap\r\n\r\ngsbmanzopklyw\r\nzorpislaqbnmywg\r\nawbgczsdxlumypnoh\r\nwtmkgobyaslnzjp\r\npmjlbsonkfwgtzay\r\n\r\nupqwyiagtonfvrsk\r\ndpkvuwoqfaiygsnmtxr\r\nunorfgkpiyasqctzwvh\r\nkbwpyrniohgufqsvat\r\npfqgsyuhnovktirwja\r\n\r\negkzlwjd\r\nszermjwkl\r\nkaelwjzoq\r\n\r\nefmclagdkwhqxrosntzvib\r\nmdhlqfabcrwsgxonizvkt\r\ndhbqlnftivxwapoczskrgm\r\n\r\noxsedbl\r\nzsblx\r\nlrfax\r\n\r\ntv\r\nvta\r\nvat\r\ngpmosjtv\r\n\r\nltgeu\r\ntudo\r\ndtuoa\r\ntud\r\n\r\nycsajei\r\nsghikbpmr\r\n\r\nbjfohqiwcpd\r\nlzeysr\r\n\r\nghcenrzqksifd\r\nckwsgdnerfziq\r\niebsrncqmfk\r\n\r\nidbjyxctlgpwas\r\nwgiypblsacjuxd\r\n\r\nivnkjswb\r\nbk\r\nkrb\r\nkblc\r\n\r\nhbmocfrual\r\nurlfbmocha\r\n\r\nmtvwqhag\r\nwtxdcuen\r\n\r\nbmdary\r\nwjma\r\npexakfgu\r\nbhijav\r\nvlmcia\r\n\r\njeaposhgqcblxitkrzyn\r\naordjqiglcnpvekthsbzy\r\njhtrkqynszelcoiabpg\r\njkftnvbgyqploaicsehzr\r\n\r\nq\r\nqt\r\nv\r\nt\r\nz\r\n\r\nqidvuo\r\nuohvqibd\r\nudivqo\r\noivduq\r\nvidqou\r\n\r\nxjlbhrsnpat\r\nqsavnktzbuldprxh\r\ngxswnpftrehlymi\r\nsahprlxnctz\r\n\r\naxqni\r\naciqnx\r\nxqian\r\naxnrqi\r\nqxnia\r\n\r\ntbuicahr\r\nbanvchurti\r\ngrtbwaihclu\r\n\r\njylfirgmsx\r\nlgfmxjri\r\nxgmklqtfrwj\r\ngxmlsfjr\r\n\r\nayunwcgj\r\ngmcyn\r\ngdtvfioexhys\r\nbgyl\r\nngqyc\r\n\r\nneyazrtkxjhbg\r\nyxjzqknb\r\n\r\ndiljtqg\r\nqwsnyuabx\r\nqsfhuzv\r\n\r\nqzpj\r\nzjqp\r\nqpgzthj\r\nqfzlpjcydxsn\r\n\r\nsbkrcjleytuidw\r\nwcbtiljyedmsugk\r\nzubetwdyikjcsl\r\nlwbdieutjkcys\r\n\r\nc\r\nc\r\nc\r\nc\r\nt\r\n\r\npdglkmircznxjshwytq\r\nikqrzgyxtdnjswmphcl\r\npgihtyjczwdlsqrkxnm\r\n\r\nysj\r\nysjf\r\nfjsy\r\nsjpy\r\n\r\nc\r\nca\r\nc\r\n\r\nfjaounzyrck\r\nuqzfontkrajy\r\nauoyjknrzf\r\n\r\nadgezcjtmlwbnkxsp\r\nzlkjswmgabtcenpxd\r\nwedpgjnmlzibkasxct\r\nbkcfsemlqzujnxtgwadp\r\n\r\nxrdzvqcyawst\r\nvztcaqyr\r\n\r\np\r\npw\r\nhpf\r\n\r\nsyzmig\r\nlqpmnh\r\n\r\nqwkysudhal\r\nmyk\r\ntykc\r\nky\r\nykm\r\n\r\nnapugxj\r\npjnuxga\r\njxpaung\r\nxgjnapu\r\njnpxaug\r\n\r\nxcwklzsdouvejph\r\nwvecjukzhpsnl\r\nuzksblpwigjchv\r\nszkwpncyudlvhfj\r\n\r\nmazvxenotrbjpsg\r\nxabenjzrgtmocpsv\r\n\r\namkxogyl\r\nlkmyxgoa\r\nyagkoxlm\r\nawykgxlmo\r\ngxayomkl\r\n\r\neuqjn\r\neijrqnw\r\nqnje\r\nenjq\r\nqejn\r\n\r\nqmicpr\r\npc\r\n\r\nmhfelurtibxzg\r\nprcigefthzmbulx\r\nbehzitgmxflru\r\nuxgrmzibtelhf\r\nrzfluixbtmegh\r\n\r\ntrwq\r\nt\r\nzt\r\n\r\nyjbcohw\r\njueqzodyk\r\n\r\ntyroqsxepnbfckhuazjdwvmgli\r\nbyjcgxmurontvhspekwqildz\r\nsvtmwnbighlpxeyokjurzqcd\r\nblprtoqjwnmyuxvdzkeisgch\r\n\r\nmrwtb\r\ntrmbw\r\nwtmrb\r\nrmtewb\r\ntwmbr\r\n\r\njlwri\r\ndrwibj\r\ntiwre\r\n\r\ncz\r\ncz\r\nz\r\nwusz\r\nzeg\r\n\r\ngxqrucimko\r\nzhpqfvbinsy\r\niqlwdgtje\r\n\r\nwyzjqgdihbxar\r\nlwcivxtmaojgbzhp\r\nxzuwgjrabkhfid\r\nihsaezxgqnybjw\r\n\r\njtair\r\nkfsv\r\nghze\r\n\r\nu\r\nuj\r\nu\r\nu\r\nu\r\n\r\nepbvkzsoyqlrifatwch\r\ntfzwlivkhsrbceoqpay\r\nwzcqpotkrhfliavbyes\r\nwvgeufcbopsqymritkalhz\r\n\r\nvkaldbmyewi\r\nrcxvlibuedgamy\r\nlysiabjdkvme\r\n\r\nnwhqcojkpgvfatderylibxz\r\nhgnoiclkaebtpdfjvmzywx\r\n\r\ngafbqnxstirzvoheydmlpwj\r\nhqrukwtozblfyasdxvmnpgei\r\n\r\nabpzed\r\ndapzb\r\nwcbdnzapj\r\n\r\nuho\r\nnmp\r\n\r\nyofngr\r\namn\r\nn\r\nn\r\nmn\r\n\r\nzguhotqnvkepfyabr\r\nokwtbzaqfyen\r\nkonyqtbzefa\r\n\r\ninbtkepjylqdfxczmoauw\r\nmzolcwaxfnbditkejpuqy\r\nzjyoifdkmcaupenbtwxlq\r\n\r\nyuzri\r\nrubyi\r\nyiur\r\n\r\notdbszvjhecrkiypn\r\nydmovicrbzfkeshqng\r\n\r\nefc\r\ne\r\n\r\norbzu\r\niszurwb\r\nbecjrkzup\r\nirlznub\r\nxbtragfdyqz\r\n\r\nfpj\r\npfrd\r\nfpr\r\nfpwc\r\n\r\nrklcfn\r\nnflck\r\n\r\nli\r\nsli\r\nik\r\ni\r\nisv\r\n\r\nawuhgmb\r\njznsiqycker\r\n\r\ny\r\ny\r\nvmpdu\r\nok\r\n\r\njeionpfgkvxdmrzlyc\r\ndiblznsykpuxwqfm\r\n\r\nmlykav\r\nvmka\r\naqvrkdm\r\nvkmiaz\r\nrmkdvaq\r\n\r\nuyljahgbxsvczpkdq\r\nrowf\r\nntemi\r\n\r\nxjhaitwlozdpcbv\r\ndvnzjxblpcahoiwt\r\nxbwdolatjhvczip\r\n\r\nspohauibt\r\nipsatqnozlxvub\r\n\r\nvuzf\r\nfchz\r\nzf\r\n\r\nalmqujgzovhyfkbwtindre\r\nzvskmgitqyweoldjufranbh\r\njrkeqfanmvoiwblzdthguy\r\n\r\ny\r\ny\r\ny\r\ny\r\ny\r\n\r\nfsqxhnbtcdy\r\nbhkqnvxdws\r\nqsdnxihbm\r\n\r\nc\r\ncvip\r\nwcqp\r\nxrkjc\r\n\r\ncbsfeonkqthadzimpwyg\r\nwkybvhdsnaztcgefpqom\r\ndipbljsqxfecakmtyoghnwz\r\n\r\nocxiztfw\r\ndjhaepyqu\r\n\r\npbyzfvq\r\nrpqzvf\r\n\r\np\r\np\r\np\r\nr\r\n\r\nfgj\r\nmghx\r\ncguivrnzdw\r\nxhmqlgf\r\n\r\nlypf\r\nfpyl\r\nnpylwaf\r\nleupfy\r\n\r\nrxyzatoj\r\nxvfin\r\nbxlfk\r\nucbqx\r\nlx\r\n\r\nrkixw\r\nfk\r\nmk\r\nkmybf\r\nvkqg\r\n\r\nmacdvsjophnzixyukwglqef\r\nuhkdzsyecoixjpgqvanlfwtm\r\nnszgjudxpfchoameiwrqylkv\r\nhgkswmlvjyufeipaxnoczdq\r\n\r\nhkvtprgxom\r\nmxitpvkgdrho\r\nmphkortnigv\r\nkvtprlhmogd\r\nkmverqtohgpwj\r\n\r\nkrsazmfbdtxyuijh\r\niebqjdruma\r\ndimbrjua\r\nimjurdab\r\najrbuicdnvm\r\n\r\njzroas\r\nvwo\r\nom\r\nkmvo\r\nfo\r\n\r\nvckphlabort\r\nktprcvabohl\r\ntabrkohlcvp\r\n\r\nlb\r\nj\r\nxi\r\np\r\ni\r\n\r\nibxswpzlgak\r\npablwzkxs\r\nkzablwpxs\r\nxapzsbwkl\r\n\r\ntexidwzkyjcapn\r\ndjptyzcernia\r\nnarcjoiteqzdp\r\ncetbjpzavigmnd\r\n\r\nthxzfeocaqpkd\r\nrvgoyxzlk\r\nzkox\r\nkxuzngo\r\n\r\ndqsofevyrijctbxzwkghn\r\nkjwvnobzergsihtdycqxf\r\nrobqyvzihwjsxcdfektgn\r\noctvjeshdiwbyfngzqxkr\r\n\r\nf\r\nudzlmcrjehivqpx\r\nagn\r\nowb\r\n\r\nvokdu\r\ndck\r\nknd\r\nkd\r\n\r\ntxqlzrv\r\ntvxlqzr\r\nvxaqzrlt\r\ntcxrzvql\r\nqtzvxrl\r\n\r\nflnc\r\nlsk\r\n\r\nagqspncoikwytuvre\r\nmuyijzoltcepsaxkdvhbgf\r\n\r\ngmlyx\r\ngakyvsl\r\ncdthyjrioubq\r\nmyl\r\nawezy\r\n\r\ndfzvhkblgnj\r\nkvzjdfgbnlh\r\nhdknbjzfvlg\r\njkgvnzldfbh\r\njzkhfvgbnld\r\n\r\njvdkxqsrio\r\nrpuqvkncfgzit\r\n\r\noqzmkjb\r\nglehuw\r\n\r\nstweunormcqdyivabxk\r\nplgihfuzjbr\r\n\r\nfiakobrucnqyjtxsvmw\r\nutcfankbwvozqjxy\r\nvqknowtacjbxyfgu\r\nqboaxvykfcjtuwen\r\n\r\nlqxfvjncarmowzst\r\nsgpnhq\r\nspnyueq\r\nkqns\r\n\r\nplis\r\ni\r\n\r\nalqp\r\ndpml\r\nycntviwgf\r\nzkeau\r\npkxo\r\n\r\ncahvspxi\r\n\r\ndgyk\r\nkydg\r\ngycdk\r\nygkd\r\n\r\nygxdtqsiralczwmfoke\r\nfqeoltimdykzgwxrcas\r\nmlrzsgafxqcidkweyot\r\n\r\nibpuxwfrnjygadl\r\nucbjmfziyklnrdxw\r\nwbqrxjdihesvyunfl\r\nzfubxtylwndjrpimo\r\n\r\nahdf\r\naq\r\nawjyc\r\nas\r\nnah\r\n\r\nklygiqmwhzubproas\r\ndhetbmfiazsqrwclvugpk\r\nugnkxpmqirhswazlb\r\n\r\nn\r\notzi\r\nq\r\no\r\ndkfx\r\n\r\ngwoidjb\r\nsqownkvt\r\noywgjxa\r\niwoeh\r\n\r\nkcsfhg\r\ngfksc\r\ngcksf\r\npcgsfdk\r\nhsckgf\r\n\r\nlzgtrfpsxwqhi\r\nyqzovtixp\r\n\r\nmqyhlxgfnbtcvwejpsrdouzik\r\nsimkqtcevpohxdygbjlzrnfuw\r\ndprugmhqkcwveixoyjbstznfl\r\n\r\nm\r\nm\r\n\r\nakmrpwutnb\r\nlnamrphkwtf\r\nrpumnazwkft\r\nkwrtmpvan\r\nmjakwnsxrpt\r\n\r\nkgstyrbauzjiqfmdl\r\nrlpubyfadxmtijgswzcqk\r\nbzsfnumiadjykeltgrq\r\nqfavbdhujrglyzstkmi\r\n\r\nzvxca\r\nxazcv\r\navcxz\r\ntwxcavzk\r\nvxzoca\r\n\r\nkyjbqhd\r\nyqg\r\nmleagqy\r\nqnlgy\r\nrvqya\r\n\r\nrkbfpejgaqunlhy\r\nhogsunxedrlkbaj\r\nktzjmaugrnhblie\r\nrbkgnajlehu\r\nqelbwhuragjnk\r\n\r\npkbrlq\r\nfhlvcetzujqo\r\n\r\ndbpnjmfgzuaky\r\nqrmnapvjswgyzfecl\r\n\r\noubx\r\nuxb\r\n\r\nk\r\nt\r\nce\r\n\r\nqo\r\noq\r\n\r\nnrdoliybfmk\r\nxbfonlytdi\r\nodbyanilf\r\nzdyinxfbrlmv\r\nbnfgwdiyls\r\n\r\nptqr\r\nyhpr\r\noifcxpumwares\r\nrhbp\r\nvrp\r\n\r\nedmfbockpuzjl\r\nmejpzldckfoub\r\nbulkamoepdzjfc\r\nwjblknodpmczufe\r\nplbzukcxvdhefjmgo\r\n\r\nsbfvdziayohutkxmcepnjgrwlq\r\nslqbthaugnxcfejkymrpvdzwio\r\n\r\novnuybcjzw\r\ncubyavn\r\n\r\njlpyfemohwb\r\nympjolewhfb\r\nhpjymbwolef\r\nhmfewypjlbo\r\nyjwlomhpfbe\r\n\r\nyudoticgpmswxheb\r\nimctpdhksgwavxbefuy\r\nytmhucixswdegkbp\r\n\r\nfemhgtsc\r\nhgetcp\r\ngct\r\nschmgt\r\nacogbzt\r\n\r\njdfzyhgnks\r\nkfmgndbypsjz\r\n\r\nqxkrsvfih\r\nxvirkqfh\r\nkxirvfqh\r\nphvuixfqrmt\r\n\r\njwq\r\novwjq\r\nazpjnys\r\nhjw\r\nj\r\n\r\nmekjycug\r\nokyicj\r\njevq\r\ndzsharjxltp\r\n\r\nageqsriyfoupknldjz\r\nbqkjhmi\r\n\r\narqoszdiyemtlpbcukxhg\r\ntskxzcqmelhorypiua\r\nikcwsfalhzymorqxpetnu\r\n\r\no\r\nwj\r\no\r\no\r\n\r\nhoqrjzemyfidak\r\nhdofikzyrjqaem\r\namyjorkehdizqf\r\nqyajdekzmfohir\r\n\r\nrfgtpasbvquzykj\r\nkwdcasjtyvzfuqegpib\r\ntpangskbuorqyjfvz\r\nqubhzfvakospgtyj\r\ntjgvuayzfprksbq\r\n\r\nxvsetimqaglzhubopjnkrw\r\nvretjpaqgzidoulbmxhknsw\r\nkxzwjmscaeulgqnpovihbrt\r\nriwnepagmhktvusxqljobz\r\ntugmqkbasnzhjivrlpwoxe\r\n\r\nyawojch\r\naoyhjwc\r\nwjcyoah\r\nocawyhj\r\n\r\natfkezomu\r\nbwghcxijm\r\nlmydqzvnpr\r\n\r\nnfajymk\r\nyakjmfo\r\nskayfjm\r\nayjvkmfti\r\n\r\nzbcgaxyjd\r\nemltdhkwsug\r\ndqgfnue\r\nqgnvd\r\n\r\nibecm\r\necmbtfislo\r\ncxympeuib\r\niacrepxbm\r\nckibme\r\n\r\nednxkzblgoqwrys\r\nnaklxbrzsodqegwjyf\r\n\r\nmabnelwrzy\r\nkeandpqxbmlo\r\ngviuhjstf\r\n\r\nxlzoysmpdgfcabiqetr\r\nmplwsgnxcadzfhukvrqjeybo\r\n\r\nl\r\nl\r\nl\r\np\r\nl\r\n\r\nzyjuwao\r\nodfv\r\nskqoc\r\nomvrcqbh\r\n\r\nfgpcjvmbxuiwtehnd\r\npcfsgtxbnkuihadm\r\ncdgtfhbmxpuni\r\n\r\ne\r\nea\r\np\r\n\r\nild\r\nld\r\nld\r\nld\r\nlhd\r\n\r\nhwelutk\r\nwshulk\r\n\r\nmilbjvxorn\r\nlbivoxrnjm\r\nmjxivlrobn\r\nilxmovnjrb\r\n\r\ninhcdkotgs\r\nsyndfwkghteico\r\ngkhdiczostn\r\n\r\njgpmfyqskc\r\nkgfyqpsmcj\r\npyfckjgmqs\r\ngskpcqyjfm\r\npyqsjmcfgk\r\n\r\nopbqxluhyvskn\r\nxonskvbpuqhyl\r\nvnijlhyqpxukgosdb\r\n\r\ndzglxpfnt\r\nnfptl\r\nqynmuvrcp\r\nzdnpk\r\n\r\nligcsyexbdoqt\r\neducotylzjb\r\nzuyockfnbhtedml\r\nowlyuabectdf\r\nycdrabolte\r\n\r\nhw\r\nqr\r\n\r\nutqdisoacyr\r\njgnbvzwmhekfxpl\r\n\r\ns\r\ni\r\ni\r\n\r\novbhcfp\r\noauvcpte\r\nqowxkpnyjlvdismc\r\nzvctogpfa\r\n\r\nqtsmhpwz\r\nqchasetf\r\n\r\nysmvb\r\nbyvsm\r\n\r\nyjkvnlqcpgasibtex\r\nycjgqedpvnx\r\nnuygpfzhvejqdxc\r\nqwyjenxfvpzmcgu\r\n\r\ntlribvnydjfex\r\nrmpjdqsbzgcxv\r\n\r\nhn\r\nuhn\r\nnh\r\nhn\r\nhnz\r\n\r\nyvzrqpbel\r\nblejaozvmypr\r\nebrlvfyzwp\r\nbrzpyelfv\r\nzwbpyervlf\r\n\r\nrtgnjiawecpmu\r\nejcnpgtawuirm\r\n\r\nqhuybzmv\r\npnwzceb\r\n\r\ncuijneskratyqgwxmodzhpl\r\nwtqshpyzrcmokixgjbenf\r\n\r\nwrthvasmxk\r\nhvktmsarx\r\n\r\ns\r\nsp\r\n\r\ntd\r\nrvjitl\r\ntdpk\r\nt\r\n\r\nmgdaqpzefbxh\r\nxfbmeadgzqcn\r\neragqjmlofxysdt\r\n\r\ncvzxwpf\r\npxwuef\r\nlxswpeft\r\nwxpf\r\n\r\neqckjbluvodhtg\r\ncvgujlhekoidtqb\r\nbhdoltuvgkqjce\r\nvhgjcektdbuloq\r\njdogqblchetukv\r\n\r\nhmgwcszjqpyxil\r\nwzplksghxcmyji\r\ngkiczwmlyjxsh\r\njsgxcmzhlyviw\r\nujihlsyxgmdzcw\r\n\r\nofrubwjqkxpzaitevscmgyln\r\nbigsuetvkorzqpajxwfldncm\r\n\r\nqink\r\ninrkq\r\nknqi\r\n\r\njvnayiodwg\r\ndos\r\ntmhzeqdpo\r\nhods\r\nbohdklfu\r\n\r\ni\r\ni\r\ni\r\n\r\nndwutoamyzbrpqsveg\r\nzbdswnrevapmgty\r\nzdtpnymegawsvrb\r\n\r\nobwzklcynjgme\r\nzlkeyfcgwmjn\r\nicjzemnypwklgo\r\nmunwqycgzkelj\r\nkcnzjsiylwpxgem\r\n\r\nnbaeiqstvdwmhjukx\r\nnjxvowhqdfabieskmuzt\r\nwbnsutjqdhgevkmixa\r\nycjswbkaqmvixlhutned\r\n\r\nokcwymdgvfhlxzt\r\nodygvtkmlwfxzch\r\nwcmgjhdflxotzkyv\r\nkaxyfglvwmodzcht\r\ndxcafvltwokmyzgh\r\n\r\nrejdmivax\r\nxdamjver\r\nejvdxmar\r\nrjmedxva\r\nedrvajmx\r\n\r\nlkqgnc\r\nlnckg\r\nlkgcsn\r\nwklnhcg\r\nlcgkn\r\n\r\nupnosleiz\r\npnlszwe\r\nesjpdnlrm\r\nhnletqakgpsb\r\n\r\nfb\r\nf\r\nf\r\nfrz\r\n\r\nd\r\nd\r\nd\r\nd\r\nd\r\n\r\nlyqavutgbwiehjrc\r\nqcragbvihujlowtpy\r\ntzyjhawliuvbqdrmgc\r\nrglvzjtuidbcywqamh\r\n\r\nedolzs\r\nluoeshd\r\n\r\nv\r\nv\r\nvg\r\nv\r\nv\r\n\r\nscwuqekdbmarfiy\r\nnzoxvptg\r\n\r\nycpvjeubrazgiodxtwn\r\ncptzsxjmklyvdeaonbqiwr\r\n\r\nkbmqslrvnyzpj\r\nslxfnbqpjy\r\njsypwbnlq\r\n\r\nxv\r\noxv\r\nxv\r\nvx\r\n\r\nulzdr\r\nzoshulr\r\nxduzr\r\nzrqju\r\ntzurvebgc\r\n\r\nvp\r\nv\r\n\r\nn\r\nfn\r\nn\r\nn\r\n\r\nbmpfnxzsajwvyhqldrecout\r\nrvnpsoxzlcmeufthkjayq\r\nhozncuervmgqpyfatjxls\r\novrxesptqajlzycfnmhu\r\n\r\nlfjc\r\nfc\r\nfc\r\nfc\r\n\r\njdhrx\r\njranxydbgt\r\n\r\ny\r\ny\r\ny\r\ny\r\ny\r\n\r\ntpfydje\r\nejpdfy\r\njyepdf\r\nepjdyf\r\n\r\nb\r\ngphf\r\ne\r\nuvkc\r\njza\r\n\r\nglyxuj\r\ngjulxh\r\n\r\nubmeofqsxdangrchivy\r\nyhcueqvgfasordxmb\r\n\r\nvbtex\r\nubenvxzkt\r\ntxbvae\r\n\r\nyoxb\r\nbyoex\r\nobxky\r\n\r\nvxhroygampneuzslckibfqdj\r\njqfcvnaizeluhkmrdxpy\r\neidxrkcnvjzhpqymaulf\r\n\r\ndtlpjkfar\r\nsjtprafdyel\r\nafpgjtvlr\r\n\r\nz\r\nb\r\n\r\nrwutpgkyanm\r\nnwatgkmpuyr\r\n\r\njb\r\nbj\r\njb\r\nbj\r\njb\r\n\r\nyvcbs\r\ncsvybh\r\nbsvycu\r\ncsjrinybgpv\r\nyhsvbocw\r\n\r\ntapdxjkbuhn\r\nuqoaigmtphcfv\r\n\r\ngbrf\r\nbgrf\r\ngrfb\r\nbrfg\r\nrfbg\r\n\r\nlhj\r\nr\r\n\r\nnsuvr\r\nrntus\r\nrnmdcsu\r\nnusr\r\nusnvr\r\n\r\nmglncfrspjxqdheatkby\r\nawokdbmlvurnzjecqsyxpth\r\n\r\ndkphrovicb\r\noihkdcrvpb\r\nkcdvhbipor\r\nichrbdpvok\r\nprckhibvod\r\n\r\nobaxmnut\r\notabun\r\nhaobdtun\r\npvfnztekujcbqyoa\r\ntibmhoagun\r\n\r\nmvhtqgsxc\r\nztljokabwni\r\ntdyuefmqrp\r\n\r\ngdx\r\njnxk\r\nx\r\n\r\nbwfpeojrtnqmszhya\r\njfduwroxmenzhky\r\nmhfrjediyznwclokv\r\nhfjirnwymekgzo\r\n\r\nbzcpqi\r\nipcqbh\r\nciqpb\r\n\r\nvbnegldq\r\nebgvq\r\nequxgbv\r\n\r\npmcjwzqsrgye\r\nsvhujyprdftb\r\npjsnaryo\r\nonsrpjy\r\n\r\ndfqbynoxcgljpuhaesmvt\r\ndxhecqampgnyultfjosvb\r\ncifqxleudmvjhgaspybotn\r\nsnqvtgaphyfloxeucbdjm\r\nayetuxbogqcmfnsjvhpld\r\n\r\nwoqjbvaesrh\r\nrmjaeswobqv\r\nrqeswbjoav\r\nowebqrvajs\r\n\r\nfsgejt\r\njskg\r\n\r\nobzeufrsykvjdqg\r\njqaiozpwrmbsdxkf\r\nsjqdzfktbrlho\r\n\r\nawqldosnzykc\r\ndolsawqncz\r\nwodsqznacl\r\n\r\nohtxrakybsecjnqviwduz\r\nmwodbqsxihrajpcztygluknfve\r\n\r\nm\r\nmv\r\namq\r\nm\r\n\r\nahoubdnlywcigjt\r\ncynbhdivwtoglaju\r\n\r\nbpgewx\r\nzxpubsdwq\r\n\r\nadhjekz\r\ntzjkde\r\newkvzjd\r\ntvefjzdk\r\nejdkz\r\n\r\nuetkosjndqgxcyvm\r\nmclnrsaxjytqvdpg\r\n\r\nkbhed\r\ndix\r\nafdt\r\nd\r\n\r\nxhd\r\nhgrd\r\n\r\nrbyavgzjflhdinqesk\r\nsnkvihbalfryjzeq\r\nzhaivknreqfjsbly\r\nbrkljfziyensvaqh\r\n\r\nbokdlygwhafrc\r\nxwuronlpakqi\r\n\r\npnwsxh\r\npnrwsxh\r\n\r\nyhrqpsbjv\r\ndav\r\niwuoxlgfc\r\n\r\nhwge\r\nihwejbsv\r\nzneltwyrhfkaom\r\newxjvh\r\n\r\noxnscztqjyafr\r\nhyxnkjvwrufcm\r\npmcgrnulkfjvxy\r\nberfkxyucijn\r\nwencyxrfhlj\r\n\r\nkilhnpjvdofbatcz\r\nrhgvxiwmncfez\r\nvizhucnqfe\r\ncnhzivfu\r\n\r\numxzfpvkb\r\nvpkxumbzf\r\nxzkvmfbpu\r\nuxkfzvmpb\r\npfxvbumzk\r\n\r\nvmsdxahqipznu\r\nfupiasyvlnxjzdrhq\r\nunhagxpkvdsqzie\r\n\r\nvdwyb\r\nvyudwb\r\ncdywvu\r\nydvw\r\nvwjdayh\r\n\r\nd\r\nd\r\nd\r\n\r\nqlfcbhrvw\r\nfzrbyuc\r\n\r\njcsonk\r\nuckosn\r\nkcsno\r\n\r\nsawivom\r\nioas\r\naois\r\n\r\nweluyo\r\nqhcprdvg\r\nsbkwuy\r\nuzynje\r\nnajxiue\r\n\r\nxbrfmeznhowj\r\ntbycldqagk\r\nuivcbs\r\n\r\nuzgpwofxcaqidhntlmb\r\noidfhxgbnluzwmcptq\r\ntquhizxngoacdwfpml\r\nldztycveqghipmxsnfowuj\r\n\r\nn\r\nqn\r\n\r\nfqu\r\ndf\r\n\r\ncxpvzgfyijsaoltueqkm\r\najuxlvozygsfqpteicmk\r\nozeafkvtlqipjugyxsmc\r\n\r\nz\r\nc\r\nz\r\nr\r\nz\r\n\r\njsapzgufkmwvdibqt\r\naerhpisyudxgmvwbjo\r\npvnudbctjgfwialms\r\n\r\nauylqgmpcfbkihesz\r\nzislkfqgapebch\r\nfleshzgkqbaipc\r\nhpnszqkiatefclbwg\r\nesxlhdzvbfwkpagqci\r\n\r\nj\r\nx\r\nx\r\n\r\nvcypdnobl\r\nkfabxw\r\nwjqbig\r\nibzm\r\nkb\r\n\r\nhkodlmsgqbzjevcfayi\r\nvfyticqwblkjsuagdpozme\r\nifdqbksjrxlegomhnczvya\r\n\r\nbktgaefp\r\nrexytwau\r\n\r\nxwasezkctrov\r\npcsxbrzhdtw\r\n\r\ngzkcdewab\r\nlmd\r\nxyftvqsidhur\r\n\r\nkbvzwsdcn\r\npkbszvw\r\n\r\njsvouxke\r\nqgzi\r\nadrbyz\r\n\r\nzvqpbkanyjwgtueflcdrx\r\ncpyqrwgtjafuklzxndebv\r\nwzdgljoaycekvbptuqxnfir\r\ndjrguhfbptyxkzceavnlwq\r\n\r\nnhqgxmdsl\r\nvtzpkmqdfl\r\nuqomrjelw\r\nzflbvqm\r\nalxmq\r\n\r\nsmlxpqfh\r\ntkszqhlvm\r\nqjomlvks\r\nqwduyrbsnlim\r\n\r\nwpkcvmxuityzqgjdeofb\r\nfvkyxbjdumoptiqwgecz\r\npbdvuetqczokmxfgywij\r\nzifybkeudwvqgxjmcpot\r\n\r\nporctbafwqzedgysxljkhv\r\njxbdhgqkftnyalsopzvwce\r\nkozvgtxejlcpdhqsyfawb\r\n\r\nobduynsxf\r\ndysbxonuf\r\nfbsoduxny\r\nubycdxnofs\r\nbfysonxud\r\n\r\nhis\r\nvfxa\r\nxa\r\nfax\r\n\r\nyolm\r\nbo\r\n\r\njotsmh\r\nxfqhsbvrolc\r\nhsgdaoz\r\njotyhsu\r\nszoh\r\n\r\ndz\r\ndz\r\ndz\r\nzd\r\nzdk\r\n\r\nidykem\r\nasftdpu\r\n\r\nfbvmunwkreldcy\r\nblaqkxzvyim\r\nilbvmxjkysq\r\nlaiymvoqhbgk\r\nvpklbmyg\r\n\r\njvsmlog\r\njgwvmsplo\r\n\r\nrisldpqb\r\nlbsiprxo\r\nbsiprkl\r\n\r\nnzcybwkpah\r\nyhwcpkzna\r\nwzhcnpayk\r\n\r\nixfbamn\r\ninb\r\nubinke\r\nncbkei\r\n\r\nelchnpjkxwtqig\r\nnljgiceqahbx\r\nlcugbexhqjin\r\nidxjhmeqclgfnv\r\nfqlhcexigndj\r\n\r\nvmgcneztlbs\r\nqeblzmvcngst\r\nngbclszmvet\r\n\r\nckn\r\nc\r\nc\r\nc\r\nc\r\n\r\nyezpv\r\nwyvlez\r\n\r\nhfdtkslevcwnoxzi\r\ntsfekmdjvclihzwno\r\netsiwvnzlkfdhoc\r\nckfotsdnzivhwle\r\n\r\ne\r\ny\r\n\r\ncdbn\r\nbcnd\r\n\r\nhbupimtkawejgvfzcnoysx\r\nzfnkwbpvchoxietmujsyg\r\njmehbtwivfznkupxcsgroy\r\ngomuvnyjhwekscizbtxpf\r\nhspzxkncvfitwjguymebo\r\n\r\nqjw\r\nj\r\nrosg\r\njt\r\nqjxe\r\n\r\ns\r\njs\r\ns\r\ns\r\n\r\nsudlgxvitacpyfhkr\r\nisuvgfkrchadnj\r\ngvqfzrmdihucsak\r\nqgrodskhauficv\r\n\r\nrqefisluvyg\r\nnyjotwizfk\r\niayf\r\nyifd\r\nftyij\r\n\r\nalxbdhwiscq\r\nqgcjrwezay\r\nahwitmqdcu\r\n\r\nd\r\nd\r\nyxl\r\nd\r\n\r\nzwfdsuqc\r\ndzcw\r\ncszudw\r\nhzdlwb\r\n\r\naxv\r\nvx\r\nvx\r\nxv\r\n\r\nnrw\r\nblzfvgh\r\n\r\npe\r\nelqmzvgfk\r\ne\r\n\r\nygfk\r\nxdjnublae\r\nr\r\n\r\njvn\r\nnvj\r\njvn\r\nvjn\r\n\r\nmblaqhitwdv\r\nbljivaqxthdw\r\n\r\nd\r\ndc\r\nd\r\nd\r\nd\r\n\r\ne\r\nd\r\n\r\nvjsrl\r\njrlvqseb\r\nvlsrj\r\nlvrsj\r\n\r\ncjfta\r\najfct\r\ntjcaf\r\nfjbhatc\r\n\r\ndqbfeprkzgvt\r\ntpbfkdrqge\r\nrwaqfedxkpbgt\r\n\r\nowbmusnzvgpf\r\norgvlwkyxp\r\ntvpwohg\r\nwtgqcovp\r\ngpavywoie\r\n\r\ngczomkqlvdbn\r\naolduzmgbqvyec\r\n\r\ntynrkjlgsq\r\nqsnlytrkjg\r\nyntgklrsqj\r\ntygrlsnkqmj\r\n\r\npyfrutmwb\r\nubwnsrfy\r\nyfwrspb\r\nydvborwf\r\n\r\nqlsmcbh\r\nhqlmcsgb\r\n\r\ncowjnufayrix\r\nrqaynwxfcoj\r\nxogamefhkdjyrvwcnt\r\nafrznwocyjx\r\ncuirsyxfwloajn\r\n\r\nhtosau\r\nbvkdcr\r\n\r\newyzhgipl\r\nlwezhbingydpk\r\nhpzwmijeygl\r\nieythwpglzm\r\n\r\nozjphrbglsi\r\nrguphzjoyil\r\n\r\nb\r\no\r\nru\r\n\r\nritlagqevs\r\nitslgaw\r\ngvjsalitr\r\nuixaolkghst\r\n\r\npnjoxwlurzkytdcb\r\njucwnytzoxbrpldk\r\nlxpboczwtduykjrn\r\npyzkdnxoljvurwbct\r\nrzupcbnxkwoytljd\r\n\r\nsnpvyotqzxubard\r\nqorubpavdnxytzs\r\ntxpvazrqubnydos\r\nvaotxpszyurbgnqd\r\npzxurabtqsvnoyd\r\n\r\nwcybutsgnvxlpdjrmeko\r\nursvnedtgjbylckqwoxm\r\n\r\notac\r\ncot\r\notc\r\ntoc\r\n\r\nnp\r\nndtfblp\r\n\r\nuvaeirsy\r\nvryjispm\r\nsmuiry\r\nfzdbyqsrtig\r\nrwkmycveis\r\n\r\njhutgyv\r\njuyhtg\r\nytuhjg\r\nhutgyj\r\ntuhjyg\r\n\r\nzxwyodcm\r\ndwzyomc\r\nwmdoczy\r\nwxymojzdc\r\nylowdcmvbgz\r\n\r\ntjefad\r\nyokb\r\n\r\nakbwzocshvu\r\nkchubzawyvos\r\nzbwukohvqasc\r\nhzkbucowsav\r\nzykvhoauwbsc\r\n\r\nqsy\r\njq\r\npq\r\n\r\nbnkryxpdvswjagzhfqtil\r\nkgfawvzjinumhldqpytxrb\r\n\r\nyfdr\r\nyfrd\r\nroyfd\r\ndryf\r\n\r\nwsvptxyhcqfa\r\nfysovtqwxchpa\r\nvahfqtpsywxc\r\nwfqaptcsvhyx\r\n\r\nwezkdnqhgufvarycxijlobs\r\nrzoicqxglbfhenksjwv\r\ngwikzclbvrxsnjfoheq\r\nhwexrfocgnjvqbzklsi\r\n\r\ndm\r\nyk\r\n\r\nxyqbn\r\ncxypns\r\nhkgylf\r\n\r\nmhqunico\r\nmchio\r\nhciwosm"
+clj꞉day6.core꞉> 
+; Execution error (ClassCastException) at day6.core/eval7219 (form-init14037486012135261942.clj:27).
+; class clojure.lang.Var$Unbound cannot be cast to class java.lang.CharSequence (clojure.lang.Var$Unbound is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉day6.core꞉> 
+#'day6.core/demo-input
+clj꞉day6.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ClassCastException) compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day6\src\day6\core.clj:25:1).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉day6.core꞉> 
+clj꞉day6.core꞉>  (take 5 real-input)
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: clojure.lang.Var$Unbound
+clj꞉day6.core꞉> real-input
+#object[clojure.lang.Var$Unbound 0x54168fe1 "Unbound: #'day6.core/real-input"]
+clj꞉day6.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ClassCastException) compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day6\src\day6\core.clj:25:1).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉day6.core꞉> 
+clj꞉day6.core꞉> 
+#'day6.core/real-input
+clj꞉day6.core꞉>  (take 5 real-input)
+(\x \a \v \return \newline)
+clj꞉day6.core꞉> real-input
+"xav\r\nuavx\r\nxavsi\r\nyavx\r\n\r\nefokjptizdcwmqnuh\r\nqgfdvurtnjwpichxk\r\ntaqkcunfzpmydiwjsh\r\n\r\nmzbg\r\ntmg\r\nrlvge\r\nhgpbzn\r\ncagkijyu\r\n\r\nahynbmqljzpwxokcfrtsgeud\r\nxwzcmdhkrjnupegqlyoaft\r\nfjnurhzoqmgwacxdlypkte\r\nqwrjxahtlnzcfdouepmkgy\r\nezpqxfcmgrnhylukwajotd\r\n\r\njrxcnyadsgbtpvoze\r\nsecpytarvdzjgb\r\nycsfzgtedarbjvp\r\ntsgejyzcdbvpra\r\nygtbvzredpacjs\r\n\r\nn\r\nn\r\ns\r\nn\r\nn\r\n\r\nmgfb\r\nmfg\r\n\r\nxfjengy\r\npubw\r\nisroqb\r\n\r\nhcnkeawlbfso\r\ntwocmsbefvlp\r\nacwyseblorf\r\nlosebfcw\r\n\r\ndixstroacjbygqpewvk\r\nmdcpbnfqsgxvaikwujtr\r\n\r\nu\r\nuvk\r\n\r\nvpuzogn\r\nlmhxvfgkdnspq\r\njpvzogntyr\r\najpngbcivw\r\n\r\nbip\r\nitb\r\n\r\nuvqldphg\r\nedpgfh\r\n\r\ngm\r\nmgfs\r\nmg\r\nmgq\r\ngm\r\n\r\ngtkm\r\nwkcgmsvda\r\ngmksap\r\nmkupgt\r\ngekrbimhj\r\n\r\nhknejx\r\nwjn\r\njano\r\njvwnb\r\nujnic\r\n\r\nvkzmgdb\r\nzbgvd\r\nbzdgv\r\ngbvdz\r\nzdbvg\r\n\r\nsedcuh\r\naxyeqbs\r\n\r\nckysjbmawxpedqov\r\nilqcuxpvajwmfyko\r\n\r\nxcv\r\nxhevkc\r\nvfxcy\r\nwcvfx\r\ncjxv\r\n\r\nwetaojdqkip\r\nkyedwuprqast\r\ntadubqkflp\r\nyanpslwqdtik\r\nzmgacdpkxq\r\n\r\nakdhyogxqf\r\nktnyzhxoaqfgwd\r\n\r\ndbnezgquatrm\r\newnqlzdjcgb\r\nhnzdebjgql\r\n\r\naoxjcbpzisfmkewqlngduytv\r\ndifaqevcgyukztjwpmbsxonr\r\n\r\ngrptdzn\r\npzctgolskr\r\n\r\nkvyjetqndhf\r\nyetdvnqkf\r\nsvwdpxqgeianfk\r\n\r\ntmyreouwn\r\ntorwnaeumy\r\ntsewnmzypo\r\nemosthywn\r\nmjtkevnqcbdiwoxy\r\n\r\nzstlfpnavdwyicuhb\r\ntwlpczyhunivda\r\novnuwycptldhzai\r\npcyhdwtuianlvz\r\n\r\nkwvaunqjryxtpz\r\nwflvuzhnxmecokiyjts\r\n\r\nkjcqzvhseaf\r\nqgfmhsekjctv\r\n\r\ntcpvqdrnghflmjoxawe\r\nmdplxfqnovejsgazcrh\r\nqxkhmvbpdoegnfjrlac\r\n\r\nixzcphskly\r\ngsxioyzcahkl\r\n\r\nstjxfn\r\ncpdegihznsoyl\r\nvrujnsk\r\nwnsqmb\r\nnajbs\r\n\r\npxatigolezv\r\nxkbvuitegwmo\r\ngvijtmysxoe\r\nsvnxeqjogtik\r\nsoxevgqcit\r\n\r\notzmkhlquxwrani\r\neqdjfgmaor\r\n\r\nexz\r\nqze\r\nze\r\nze\r\n\r\nxwzapvtqrgecjisfunkhd\r\nqefspnwtkijacuhdgrz\r\nzqjkasgnferutdwhcbpi\r\nrwapenikhdjcsqfzgubt\r\n\r\nfmjeqdaivksonr\r\npfeljvbqdsormxh\r\nuywvtceosm\r\n\r\nzhlao\r\nhe\r\nh\r\n\r\nqnyhtezxjdvpfkcsio\r\nnvchtzepkqjoisdyfx\r\nvifhcnxstzjpedoykq\r\nqsivneohjzpbdcymlgxfkt\r\nsxvkpohctnjfyqezid\r\n\r\nndzhflc\r\nzfdcnh\r\nfchznd\r\n\r\nnrvde\r\nramndvu\r\n\r\ntskgvzqmun\r\nszckqgbvmnw\r\nzvmsnrygaq\r\nvcqmstinzg\r\njlospfehmzvndxgq\r\n\r\nbtlfvysaqerchkiux\r\ntlyxhkrvbqufsecai\r\nvfturxsbayicheqlk\r\nsruhcbeqktixvfayl\r\n\r\nvam\r\nmv\r\nvm\r\nvm\r\nvm\r\n\r\nk\r\nk\r\nk\r\nk\r\nk\r\n\r\nysmikquxzc\r\nyetmlxqsziu\r\n\r\nornk\r\norkn\r\nrkno\r\nkoirn\r\nonyrk\r\n\r\nqcajzosf\r\nsofdacj\r\najoscf\r\ndjfscaeo\r\nfosejac\r\n\r\nrkqghbxjdol\r\nuqbdhjkm\r\njhbd\r\ncbtvadiehj\r\nhfdbrj\r\n\r\nnsklymutzivw\r\nmounvbpwdg\r\n\r\nsdpgvajmexuyqhcriok\r\nvjksamihwpdrcxqguy\r\nxjsevuydcamkihoqgpr\r\nmjtcnqpgdhvuakfrbxyi\r\n\r\nhpoyrxfmcjld\r\ncxlpodryfmjh\r\njhplfcrydxmo\r\n\r\nkembuivdhf\r\nipefszdh\r\nenclshdbfk\r\ndhreytjwxqgfao\r\n\r\nlb\r\nlkr\r\n\r\nsmtknclagp\r\npcktnslgam\r\n\r\nbfsc\r\nynbf\r\nhbxklwfep\r\n\r\nye\r\nhaybes\r\ney\r\neyw\r\n\r\nta\r\ntan\r\njtap\r\ntah\r\nlcat\r\n\r\nikdqblgs\r\nmtwlvhnbkjsdic\r\nplzskbdi\r\n\r\nrctauyzbdklxvpmnwqjfe\r\nplhzdsnbmxqarwjktyfuice\r\n\r\nba\r\nab\r\nab\r\nbar\r\nab\r\n\r\ni\r\ni\r\ni\r\nv\r\n\r\nursqy\r\nqrwusy\r\nyrsuq\r\nqrsyu\r\nqursy\r\n\r\ncdgrouis\r\nocrigs\r\n\r\nvjwaiph\r\nypva\r\n\r\nyhuqbinztxg\r\nkuqxeogthpid\r\ngtmhiquxlw\r\ngxutsafqbih\r\n\r\nwmg\r\nwz\r\n\r\ngkpmdtwhnxzaoysjcevuir\r\nhoxmkyqdcwlnvgperszi\r\n\r\noqagy\r\nglxvkq\r\nsdzbreguiwjfm\r\n\r\nnabml\r\npfnyvatk\r\n\r\npu\r\npu\r\n\r\nhbivy\r\nbyuv\r\ntueovyb\r\n\r\nozqv\r\nqzon\r\n\r\nxjunwvbzdkqy\r\nchfosmgre\r\n\r\ndyn\r\nejxy\r\nxydq\r\nyx\r\niyp\r\n\r\nhskfyqgtbzrvu\r\nyvqhtgbuifrskz\r\nhzjqfuyrbvstgk\r\nzvkhtsfgryqbu\r\n\r\nons\r\nosne\r\nnous\r\nsuno\r\n\r\nzymjefdwxih\r\ndwxzyfjmieh\r\n\r\nib\r\nbia\r\n\r\nocagmvj\r\njvcagm\r\ngamcjv\r\nvjcamg\r\n\r\ninhlewtdbkxmpaqryg\r\nwnkpxrhlmigtaydbqe\r\noihnlytpwaxrbqekdmg\r\nmqabydwgterlphnkxi\r\n\r\nbjedsywlgnxmpotz\r\npxejsongtkumzbwld\r\nlpogxznbtwmsjed\r\ntzpuonmjxlwbesgd\r\n\r\nwqfsmektu\r\nwmftqs\r\nsqmtwf\r\ntqmscfw\r\ntqwmsf\r\n\r\nsnkpjbefqwhyriz\r\nikwrlqymjczfbevntps\r\nqhebojfnzrkwapmsi\r\nbegirdpqnjkwuzsf\r\niqtbhfzpenwkrjs\r\n\r\ny\r\ny\r\n\r\ngsf\r\ngcsh\r\najqgs\r\n\r\nulqbokwrjdcgpthniyxfzmeav\r\nrjbumtoxecngkdvazsfilw\r\n\r\nfwsrhjk\r\nhjrfwks\r\nkfjrhsw\r\njrhkfsw\r\n\r\nqktgsvplh\r\nhgol\r\nhgly\r\n\r\nqftenaodxkwz\r\nbwtxaqviof\r\n\r\nugzpmhefkj\r\nkgemzusfpjhd\r\nekfjlhpmguz\r\nkxuepjgonfyhzq\r\nkuzgitlhfjep\r\n\r\njywhzcrqa\r\notznge\r\nmbuvfsk\r\n\r\niwhekorjgqtsdb\r\nkjgswlbqherodti\r\nokirgdnejtxwbqhs\r\nezobksgqrajhwdti\r\n\r\nrdcoaubxhkitwsvpzygflmqnj\r\ntcnfguzdybojqvwishrlapmkx\r\nsmjnpglbkzuafqhtdoxwiycrv\r\nspgnmzlyurchxvwbojfqakidt\r\nkzdtmbslqyvxcrwnauhoijgfp\r\n\r\nkvwm\r\nmwvk\r\nkwvm\r\nkvwm\r\n\r\nhto\r\nrhg\r\nh\r\ntvhi\r\nvhfk\r\n\r\nwoxhpvfdlnezi\r\nwemd\r\ncqwkde\r\nsedwuq\r\nwcadtgrbe\r\n\r\nmoecds\r\nwscmbnoed\r\nsdycmeo\r\n\r\namnqlcytodvreiwkzgfxs\r\nvfwmayqsghdcjztxeornkuil\r\nxgaifqzdvowmknlysrtce\r\niynsxqwmafdvtklzregoc\r\n\r\nksvejm\r\neskmvj\r\nksmjve\r\nvhskemj\r\nekmsvj\r\n\r\nebfkazr\r\ndgqtkjmw\r\nclykap\r\nzukinrbh\r\n\r\noznuhklqijpmsxfcaryb\r\nhyikolbjusmxqcfnzarp\r\nuzxcbwqshkyamrielnopf\r\n\r\nzlpsua\r\nwlzdspu\r\nluzsp\r\n\r\nh\r\nhkr\r\nh\r\nlhc\r\nh\r\n\r\nzfugqrjipavboys\r\naurvpzfeosigjqy\r\nsrnqiejtoyupgvadfzb\r\noqryvigjzsuafp\r\nqgowivrzajsupfy\r\n\r\nmrotnsaivyxbwp\r\niapmtxsgbyodwr\r\nwoaxsyjicpbtrfm\r\n\r\nrdlakocwumetfpjs\r\ncshjuyxwgatvz\r\n\r\nwbxauycv\r\nxbwgaove\r\naxwnovb\r\nfwyxmvab\r\nxtiqwbsazvjpl\r\n\r\no\r\np\r\np\r\np\r\np\r\n\r\nombjurgkvceny\r\nilxtpwaz\r\n\r\ngzjpkewnfylari\r\nnlifyawpzgkjm\r\n\r\nymhesgwkxczrtbjnu\r\ncywuetkbhnsxjrzgm\r\nuwybxgsjnhremztkc\r\n\r\npcsxyiuvfnjbtkqwhlgzr\r\nixqnskyfwrtlgchbvjpzu\r\ncvuqazjkhbxtlyrnwgifs\r\n\r\nce\r\nec\r\ncge\r\necg\r\nyeh\r\n\r\nitfhrlsvgden\r\nsvhekgidlrnf\r\nnirlehsgfdv\r\nsginfeldrhv\r\nirsvdlfhegn\r\n\r\nw\r\ny\r\n\r\njqwevpgkzhdar\r\npazkvjqdrwh\r\nurzhvwkpaqd\r\n\r\nlsmqgjkb\r\nglmksbjq\r\nqsklgbjxm\r\n\r\niouyxrvbqjcemzlapk\r\novlkizemjyarbcupx\r\nzluckepmbrxivajyo\r\nzijoveubxmlpykrcad\r\n\r\ntjaruhsdgype\r\napmetysfkivjblqd\r\n\r\nztxyvufeh\r\ndmcaqrhfgs\r\n\r\nqfvujnhtaom\r\nuvqanhfo\r\n\r\ndxwvtmlsjqurepbgni\r\nbueiqjanvlpwr\r\nzlryojfupiqvec\r\n\r\ndopjewaytmg\r\namreytdslkgpw\r\npeymdawotxg\r\nuqyahptdxzgecwm\r\nvbohdafmpiwytge\r\n\r\nzdkalgubsqw\r\ndsazbkgluw\r\ndsuzgwlbak\r\n\r\nfibeyzxkmch\r\nfveymznaik\r\nvtyafiemkz\r\nerlfizymuk\r\n\r\nuti\r\nu\r\ngu\r\nu\r\nu\r\n\r\nkhqjtmswgl\r\npxnsqzgv\r\n\r\nuhkeosrgytcpbvmanqdlwjfz\r\nsingwfcorvzadktblmupejqy\r\nlezdusrpwbnfmkvjcxyogatq\r\n\r\nnqlmhgrp\r\ne\r\nsw\r\n\r\nhrmxwjzg\r\nwzrtpmah\r\nmrewhx\r\nywkbrnhmci\r\nrhomuvw\r\n\r\ncfpsboei\r\nwtifcoybpx\r\niofcpb\r\ncbpoisf\r\npcoibf\r\n\r\nx\r\ntx\r\nx\r\nxf\r\n\r\netvc\r\ncoap\r\n\r\ngsbmanzopklyw\r\nzorpislaqbnmywg\r\nawbgczsdxlumypnoh\r\nwtmkgobyaslnzjp\r\npmjlbsonkfwgtzay\r\n\r\nupqwyiagtonfvrsk\r\ndpkvuwoqfaiygsnmtxr\r\nunorfgkpiyasqctzwvh\r\nkbwpyrniohgufqsvat\r\npfqgsyuhnovktirwja\r\n\r\negkzlwjd\r\nszermjwkl\r\nkaelwjzoq\r\n\r\nefmclagdkwhqxrosntzvib\r\nmdhlqfabcrwsgxonizvkt\r\ndhbqlnftivxwapoczskrgm\r\n\r\noxsedbl\r\nzsblx\r\nlrfax\r\n\r\ntv\r\nvta\r\nvat\r\ngpmosjtv\r\n\r\nltgeu\r\ntudo\r\ndtuoa\r\ntud\r\n\r\nycsajei\r\nsghikbpmr\r\n\r\nbjfohqiwcpd\r\nlzeysr\r\n\r\nghcenrzqksifd\r\nckwsgdnerfziq\r\niebsrncqmfk\r\n\r\nidbjyxctlgpwas\r\nwgiypblsacjuxd\r\n\r\nivnkjswb\r\nbk\r\nkrb\r\nkblc\r\n\r\nhbmocfrual\r\nurlfbmocha\r\n\r\nmtvwqhag\r\nwtxdcuen\r\n\r\nbmdary\r\nwjma\r\npexakfgu\r\nbhijav\r\nvlmcia\r\n\r\njeaposhgqcblxitkrzyn\r\naordjqiglcnpvekthsbzy\r\njhtrkqynszelcoiabpg\r\njkftnvbgyqploaicsehzr\r\n\r\nq\r\nqt\r\nv\r\nt\r\nz\r\n\r\nqidvuo\r\nuohvqibd\r\nudivqo\r\noivduq\r\nvidqou\r\n\r\nxjlbhrsnpat\r\nqsavnktzbuldprxh\r\ngxswnpftrehlymi\r\nsahprlxnctz\r\n\r\naxqni\r\naciqnx\r\nxqian\r\naxnrqi\r\nqxnia\r\n\r\ntbuicahr\r\nbanvchurti\r\ngrtbwaihclu\r\n\r\njylfirgmsx\r\nlgfmxjri\r\nxgmklqtfrwj\r\ngxmlsfjr\r\n\r\nayunwcgj\r\ngmcyn\r\ngdtvfioexhys\r\nbgyl\r\nngqyc\r\n\r\nneyazrtkxjhbg\r\nyxjzqknb\r\n\r\ndiljtqg\r\nqwsnyuabx\r\nqsfhuzv\r\n\r\nqzpj\r\nzjqp\r\nqpgzthj\r\nqfzlpjcydxsn\r\n\r\nsbkrcjleytuidw\r\nwcbtiljyedmsugk\r\nzubetwdyikjcsl\r\nlwbdieutjkcys\r\n\r\nc\r\nc\r\nc\r\nc\r\nt\r\n\r\npdglkmircznxjshwytq\r\nikqrzgyxtdnjswmphcl\r\npgihtyjczwdlsqrkxnm\r\n\r\nysj\r\nysjf\r\nfjsy\r\nsjpy\r\n\r\nc\r\nca\r\nc\r\n\r\nfjaounzyrck\r\nuqzfontkrajy\r\nauoyjknrzf\r\n\r\nadgezcjtmlwbnkxsp\r\nzlkjswmgabtcenpxd\r\nwedpgjnmlzibkasxct\r\nbkcfsemlqzujnxtgwadp\r\n\r\nxrdzvqcyawst\r\nvztcaqyr\r\n\r\np\r\npw\r\nhpf\r\n\r\nsyzmig\r\nlqpmnh\r\n\r\nqwkysudhal\r\nmyk\r\ntykc\r\nky\r\nykm\r\n\r\nnapugxj\r\npjnuxga\r\njxpaung\r\nxgjnapu\r\njnpxaug\r\n\r\nxcwklzsdouvejph\r\nwvecjukzhpsnl\r\nuzksblpwigjchv\r\nszkwpncyudlvhfj\r\n\r\nmazvxenotrbjpsg\r\nxabenjzrgtmocpsv\r\n\r\namkxogyl\r\nlkmyxgoa\r\nyagkoxlm\r\nawykgxlmo\r\ngxayomkl\r\n\r\neuqjn\r\neijrqnw\r\nqnje\r\nenjq\r\nqejn\r\n\r\nqmicpr\r\npc\r\n\r\nmhfelurtibxzg\r\nprcigefthzmbulx\r\nbehzitgmxflru\r\nuxgrmzibtelhf\r\nrzfluixbtmegh\r\n\r\ntrwq\r\nt\r\nzt\r\n\r\nyjbcohw\r\njueqzodyk\r\n\r\ntyroqsxepnbfckhuazjdwvmgli\r\nbyjcgxmurontvhspekwqildz\r\nsvtmwnbighlpxeyokjurzqcd\r\nblprtoqjwnmyuxvdzkeisgch\r\n\r\nmrwtb\r\ntrmbw\r\nwtmrb\r\nrmtewb\r\ntwmbr\r\n\r\njlwri\r\ndrwibj\r\ntiwre\r\n\r\ncz\r\ncz\r\nz\r\nwusz\r\nzeg\r\n\r\ngxqrucimko\r\nzhpqfvbinsy\r\niqlwdgtje\r\n\r\nwyzjqgdihbxar\r\nlwcivxtmaojgbzhp\r\nxzuwgjrabkhfid\r\nihsaezxgqnybjw\r\n\r\njtair\r\nkfsv\r\nghze\r\n\r\nu\r\nuj\r\nu\r\nu\r\nu\r\n\r\nepbvkzsoyqlrifatwch\r\ntfzwlivkhsrbceoqpay\r\nwzcqpotkrhfliavbyes\r\nwvgeufcbopsqymritkalhz\r\n\r\nvkaldbmyewi\r\nrcxvlibuedgamy\r\nlysiabjdkvme\r\n\r\nnwhqcojkpgvfatderylibxz\r\nhgnoiclkaebtpdfjvmzywx\r\n\r\ngafbqnxstirzvoheydmlpwj\r\nhqrukwtozblfyasdxvmnpgei\r\n\r\nabpzed\r\ndapzb\r\nwcbdnzapj\r\n\r\nuho\r\nnmp\r\n\r\nyofngr\r\namn\r\nn\r\nn\r\nmn\r\n\r\nzguhotqnvkepfyabr\r\nokwtbzaqfyen\r\nkonyqtbzefa\r\n\r\ninbtkepjylqdfxczmoauw\r\nmzolcwaxfnbditkejpuqy\r\nzjyoifdkmcaupenbtwxlq\r\n\r\nyuzri\r\nrubyi\r\nyiur\r\n\r\notdbszvjhecrkiypn\r\nydmovicrbzfkeshqng\r\n\r\nefc\r\ne\r\n\r\norbzu\r\niszurwb\r\nbecjrkzup\r\nirlznub\r\nxbtragfdyqz\r\n\r\nfpj\r\npfrd\r\nfpr\r\nfpwc\r\n\r\nrklcfn\r\nnflck\r\n\r\nli\r\nsli\r\nik\r\ni\r\nisv\r\n\r\nawuhgmb\r\njznsiqycker\r\n\r\ny\r\ny\r\nvmpdu\r\nok\r\n\r\njeionpfgkvxdmrzlyc\r\ndiblznsykpuxwqfm\r\n\r\nmlykav\r\nvmka\r\naqvrkdm\r\nvkmiaz\r\nrmkdvaq\r\n\r\nuyljahgbxsvczpkdq\r\nrowf\r\nntemi\r\n\r\nxjhaitwlozdpcbv\r\ndvnzjxblpcahoiwt\r\nxbwdolatjhvczip\r\n\r\nspohauibt\r\nipsatqnozlxvub\r\n\r\nvuzf\r\nfchz\r\nzf\r\n\r\nalmqujgzovhyfkbwtindre\r\nzvskmgitqyweoldjufranbh\r\njrkeqfanmvoiwblzdthguy\r\n\r\ny\r\ny\r\ny\r\ny\r\ny\r\n\r\nfsqxhnbtcdy\r\nbhkqnvxdws\r\nqsdnxihbm\r\n\r\nc\r\ncvip\r\nwcqp\r\nxrkjc\r\n\r\ncbsfeonkqthadzimpwyg\r\nwkybvhdsnaztcgefpqom\r\ndipbljsqxfecakmtyoghnwz\r\n\r\nocxiztfw\r\ndjhaepyqu\r\n\r\npbyzfvq\r\nrpqzvf\r\n\r\np\r\np\r\np\r\nr\r\n\r\nfgj\r\nmghx\r\ncguivrnzdw\r\nxhmqlgf\r\n\r\nlypf\r\nfpyl\r\nnpylwaf\r\nleupfy\r\n\r\nrxyzatoj\r\nxvfin\r\nbxlfk\r\nucbqx\r\nlx\r\n\r\nrkixw\r\nfk\r\nmk\r\nkmybf\r\nvkqg\r\n\r\nmacdvsjophnzixyukwglqef\r\nuhkdzsyecoixjpgqvanlfwtm\r\nnszgjudxpfchoameiwrqylkv\r\nhgkswmlvjyufeipaxnoczdq\r\n\r\nhkvtprgxom\r\nmxitpvkgdrho\r\nmphkortnigv\r\nkvtprlhmogd\r\nkmverqtohgpwj\r\n\r\nkrsazmfbdtxyuijh\r\niebqjdruma\r\ndimbrjua\r\nimjurdab\r\najrbuicdnvm\r\n\r\njzroas\r\nvwo\r\nom\r\nkmvo\r\nfo\r\n\r\nvckphlabort\r\nktprcvabohl\r\ntabrkohlcvp\r\n\r\nlb\r\nj\r\nxi\r\np\r\ni\r\n\r\nibxswpzlgak\r\npablwzkxs\r\nkzablwpxs\r\nxapzsbwkl\r\n\r\ntexidwzkyjcapn\r\ndjptyzcernia\r\nnarcjoiteqzdp\r\ncetbjpzavigmnd\r\n\r\nthxzfeocaqpkd\r\nrvgoyxzlk\r\nzkox\r\nkxuzngo\r\n\r\ndqsofevyrijctbxzwkghn\r\nkjwvnobzergsihtdycqxf\r\nrobqyvzihwjsxcdfektgn\r\noctvjeshdiwbyfngzqxkr\r\n\r\nf\r\nudzlmcrjehivqpx\r\nagn\r\nowb\r\n\r\nvokdu\r\ndck\r\nknd\r\nkd\r\n\r\ntxqlzrv\r\ntvxlqzr\r\nvxaqzrlt\r\ntcxrzvql\r\nqtzvxrl\r\n\r\nflnc\r\nlsk\r\n\r\nagqspncoikwytuvre\r\nmuyijzoltcepsaxkdvhbgf\r\n\r\ngmlyx\r\ngakyvsl\r\ncdthyjrioubq\r\nmyl\r\nawezy\r\n\r\ndfzvhkblgnj\r\nkvzjdfgbnlh\r\nhdknbjzfvlg\r\njkgvnzldfbh\r\njzkhfvgbnld\r\n\r\njvdkxqsrio\r\nrpuqvkncfgzit\r\n\r\noqzmkjb\r\nglehuw\r\n\r\nstweunormcqdyivabxk\r\nplgihfuzjbr\r\n\r\nfiakobrucnqyjtxsvmw\r\nutcfankbwvozqjxy\r\nvqknowtacjbxyfgu\r\nqboaxvykfcjtuwen\r\n\r\nlqxfvjncarmowzst\r\nsgpnhq\r\nspnyueq\r\nkqns\r\n\r\nplis\r\ni\r\n\r\nalqp\r\ndpml\r\nycntviwgf\r\nzkeau\r\npkxo\r\n\r\ncahvspxi\r\n\r\ndgyk\r\nkydg\r\ngycdk\r\nygkd\r\n\r\nygxdtqsiralczwmfoke\r\nfqeoltimdykzgwxrcas\r\nmlrzsgafxqcidkweyot\r\n\r\nibpuxwfrnjygadl\r\nucbjmfziyklnrdxw\r\nwbqrxjdihesvyunfl\r\nzfubxtylwndjrpimo\r\n\r\nahdf\r\naq\r\nawjyc\r\nas\r\nnah\r\n\r\nklygiqmwhzubproas\r\ndhetbmfiazsqrwclvugpk\r\nugnkxpmqirhswazlb\r\n\r\nn\r\notzi\r\nq\r\no\r\ndkfx\r\n\r\ngwoidjb\r\nsqownkvt\r\noywgjxa\r\niwoeh\r\n\r\nkcsfhg\r\ngfksc\r\ngcksf\r\npcgsfdk\r\nhsckgf\r\n\r\nlzgtrfpsxwqhi\r\nyqzovtixp\r\n\r\nmqyhlxgfnbtcvwejpsrdouzik\r\nsimkqtcevpohxdygbjlzrnfuw\r\ndprugmhqkcwveixoyjbstznfl\r\n\r\nm\r\nm\r\n\r\nakmrpwutnb\r\nlnamrphkwtf\r\nrpumnazwkft\r\nkwrtmpvan\r\nmjakwnsxrpt\r\n\r\nkgstyrbauzjiqfmdl\r\nrlpubyfadxmtijgswzcqk\r\nbzsfnumiadjykeltgrq\r\nqfavbdhujrglyzstkmi\r\n\r\nzvxca\r\nxazcv\r\navcxz\r\ntwxcavzk\r\nvxzoca\r\n\r\nkyjbqhd\r\nyqg\r\nmleagqy\r\nqnlgy\r\nrvqya\r\n\r\nrkbfpejgaqunlhy\r\nhogsunxedrlkbaj\r\nktzjmaugrnhblie\r\nrbkgnajlehu\r\nqelbwhuragjnk\r\n\r\npkbrlq\r\nfhlvcetzujqo\r\n\r\ndbpnjmfgzuaky\r\nqrmnapvjswgyzfecl\r\n\r\noubx\r\nuxb\r\n\r\nk\r\nt\r\nce\r\n\r\nqo\r\noq\r\n\r\nnrdoliybfmk\r\nxbfonlytdi\r\nodbyanilf\r\nzdyinxfbrlmv\r\nbnfgwdiyls\r\n\r\nptqr\r\nyhpr\r\noifcxpumwares\r\nrhbp\r\nvrp\r\n\r\nedmfbockpuzjl\r\nmejpzldckfoub\r\nbulkamoepdzjfc\r\nwjblknodpmczufe\r\nplbzukcxvdhefjmgo\r\n\r\nsbfvdziayohutkxmcepnjgrwlq\r\nslqbthaugnxcfejkymrpvdzwio\r\n\r\novnuybcjzw\r\ncubyavn\r\n\r\njlpyfemohwb\r\nympjolewhfb\r\nhpjymbwolef\r\nhmfewypjlbo\r\nyjwlomhpfbe\r\n\r\nyudoticgpmswxheb\r\nimctpdhksgwavxbefuy\r\nytmhucixswdegkbp\r\n\r\nfemhgtsc\r\nhgetcp\r\ngct\r\nschmgt\r\nacogbzt\r\n\r\njdfzyhgnks\r\nkfmgndbypsjz\r\n\r\nqxkrsvfih\r\nxvirkqfh\r\nkxirvfqh\r\nphvuixfqrmt\r\n\r\njwq\r\novwjq\r\nazpjnys\r\nhjw\r\nj\r\n\r\nmekjycug\r\nokyicj\r\njevq\r\ndzsharjxltp\r\n\r\nageqsriyfoupknldjz\r\nbqkjhmi\r\n\r\narqoszdiyemtlpbcukxhg\r\ntskxzcqmelhorypiua\r\nikcwsfalhzymorqxpetnu\r\n\r\no\r\nwj\r\no\r\no\r\n\r\nhoqrjzemyfidak\r\nhdofikzyrjqaem\r\namyjorkehdizqf\r\nqyajdekzmfohir\r\n\r\nrfgtpasbvquzykj\r\nkwdcasjtyvzfuqegpib\r\ntpangskbuorqyjfvz\r\nqubhzfvakospgtyj\r\ntjgvuayzfprksbq\r\n\r\nxvsetimqaglzhubopjnkrw\r\nvretjpaqgzidoulbmxhknsw\r\nkxzwjmscaeulgqnpovihbrt\r\nriwnepagmhktvusxqljobz\r\ntugmqkbasnzhjivrlpwoxe\r\n\r\nyawojch\r\naoyhjwc\r\nwjcyoah\r\nocawyhj\r\n\r\natfkezomu\r\nbwghcxijm\r\nlmydqzvnpr\r\n\r\nnfajymk\r\nyakjmfo\r\nskayfjm\r\nayjvkmfti\r\n\r\nzbcgaxyjd\r\nemltdhkwsug\r\ndqgfnue\r\nqgnvd\r\n\r\nibecm\r\necmbtfislo\r\ncxympeuib\r\niacrepxbm\r\nckibme\r\n\r\nednxkzblgoqwrys\r\nnaklxbrzsodqegwjyf\r\n\r\nmabnelwrzy\r\nkeandpqxbmlo\r\ngviuhjstf\r\n\r\nxlzoysmpdgfcabiqetr\r\nmplwsgnxcadzfhukvrqjeybo\r\n\r\nl\r\nl\r\nl\r\np\r\nl\r\n\r\nzyjuwao\r\nodfv\r\nskqoc\r\nomvrcqbh\r\n\r\nfgpcjvmbxuiwtehnd\r\npcfsgtxbnkuihadm\r\ncdgtfhbmxpuni\r\n\r\ne\r\nea\r\np\r\n\r\nild\r\nld\r\nld\r\nld\r\nlhd\r\n\r\nhwelutk\r\nwshulk\r\n\r\nmilbjvxorn\r\nlbivoxrnjm\r\nmjxivlrobn\r\nilxmovnjrb\r\n\r\ninhcdkotgs\r\nsyndfwkghteico\r\ngkhdiczostn\r\n\r\njgpmfyqskc\r\nkgfyqpsmcj\r\npyfckjgmqs\r\ngskpcqyjfm\r\npyqsjmcfgk\r\n\r\nopbqxluhyvskn\r\nxonskvbpuqhyl\r\nvnijlhyqpxukgosdb\r\n\r\ndzglxpfnt\r\nnfptl\r\nqynmuvrcp\r\nzdnpk\r\n\r\nligcsyexbdoqt\r\neducotylzjb\r\nzuyockfnbhtedml\r\nowlyuabectdf\r\nycdrabolte\r\n\r\nhw\r\nqr\r\n\r\nutqdisoacyr\r\njgnbvzwmhekfxpl\r\n\r\ns\r\ni\r\ni\r\n\r\novbhcfp\r\noauvcpte\r\nqowxkpnyjlvdismc\r\nzvctogpfa\r\n\r\nqtsmhpwz\r\nqchasetf\r\n\r\nysmvb\r\nbyvsm\r\n\r\nyjkvnlqcpgasibtex\r\nycjgqedpvnx\r\nnuygpfzhvejqdxc\r\nqwyjenxfvpzmcgu\r\n\r\ntlribvnydjfex\r\nrmpjdqsbzgcxv\r\n\r\nhn\r\nuhn\r\nnh\r\nhn\r\nhnz\r\n\r\nyvzrqpbel\r\nblejaozvmypr\r\nebrlvfyzwp\r\nbrzpyelfv\r\nzwbpyervlf\r\n\r\nrtgnjiawecpmu\r\nejcnpgtawuirm\r\n\r\nqhuybzmv\r\npnwzceb\r\n\r\ncuijneskratyqgwxmodzhpl\r\nwtqshpyzrcmokixgjbenf\r\n\r\nwrthvasmxk\r\nhvktmsarx\r\n\r\ns\r\nsp\r\n\r\ntd\r\nrvjitl\r\ntdpk\r\nt\r\n\r\nmgdaqpzefbxh\r\nxfbmeadgzqcn\r\neragqjmlofxysdt\r\n\r\ncvzxwpf\r\npxwuef\r\nlxswpeft\r\nwxpf\r\n\r\neqckjbluvodhtg\r\ncvgujlhekoidtqb\r\nbhdoltuvgkqjce\r\nvhgjcektdbuloq\r\njdogqblchetukv\r\n\r\nhmgwcszjqpyxil\r\nwzplksghxcmyji\r\ngkiczwmlyjxsh\r\njsgxcmzhlyviw\r\nujihlsyxgmdzcw\r\n\r\nofrubwjqkxpzaitevscmgyln\r\nbigsuetvkorzqpajxwfldncm\r\n\r\nqink\r\ninrkq\r\nknqi\r\n\r\njvnayiodwg\r\ndos\r\ntmhzeqdpo\r\nhods\r\nbohdklfu\r\n\r\ni\r\ni\r\ni\r\n\r\nndwutoamyzbrpqsveg\r\nzbdswnrevapmgty\r\nzdtpnymegawsvrb\r\n\r\nobwzklcynjgme\r\nzlkeyfcgwmjn\r\nicjzemnypwklgo\r\nmunwqycgzkelj\r\nkcnzjsiylwpxgem\r\n\r\nnbaeiqstvdwmhjukx\r\nnjxvowhqdfabieskmuzt\r\nwbnsutjqdhgevkmixa\r\nycjswbkaqmvixlhutned\r\n\r\nokcwymdgvfhlxzt\r\nodygvtkmlwfxzch\r\nwcmgjhdflxotzkyv\r\nkaxyfglvwmodzcht\r\ndxcafvltwokmyzgh\r\n\r\nrejdmivax\r\nxdamjver\r\nejvdxmar\r\nrjmedxva\r\nedrvajmx\r\n\r\nlkqgnc\r\nlnckg\r\nlkgcsn\r\nwklnhcg\r\nlcgkn\r\n\r\nupnosleiz\r\npnlszwe\r\nesjpdnlrm\r\nhnletqakgpsb\r\n\r\nfb\r\nf\r\nf\r\nfrz\r\n\r\nd\r\nd\r\nd\r\nd\r\nd\r\n\r\nlyqavutgbwiehjrc\r\nqcragbvihujlowtpy\r\ntzyjhawliuvbqdrmgc\r\nrglvzjtuidbcywqamh\r\n\r\nedolzs\r\nluoeshd\r\n\r\nv\r\nv\r\nvg\r\nv\r\nv\r\n\r\nscwuqekdbmarfiy\r\nnzoxvptg\r\n\r\nycpvjeubrazgiodxtwn\r\ncptzsxjmklyvdeaonbqiwr\r\n\r\nkbmqslrvnyzpj\r\nslxfnbqpjy\r\njsypwbnlq\r\n\r\nxv\r\noxv\r\nxv\r\nvx\r\n\r\nulzdr\r\nzoshulr\r\nxduzr\r\nzrqju\r\ntzurvebgc\r\n\r\nvp\r\nv\r\n\r\nn\r\nfn\r\nn\r\nn\r\n\r\nbmpfnxzsajwvyhqldrecout\r\nrvnpsoxzlcmeufthkjayq\r\nhozncuervmgqpyfatjxls\r\novrxesptqajlzycfnmhu\r\n\r\nlfjc\r\nfc\r\nfc\r\nfc\r\n\r\njdhrx\r\njranxydbgt\r\n\r\ny\r\ny\r\ny\r\ny\r\ny\r\n\r\ntpfydje\r\nejpdfy\r\njyepdf\r\nepjdyf\r\n\r\nb\r\ngphf\r\ne\r\nuvkc\r\njza\r\n\r\nglyxuj\r\ngjulxh\r\n\r\nubmeofqsxdangrchivy\r\nyhcueqvgfasordxmb\r\n\r\nvbtex\r\nubenvxzkt\r\ntxbvae\r\n\r\nyoxb\r\nbyoex\r\nobxky\r\n\r\nvxhroygampneuzslckibfqdj\r\njqfcvnaizeluhkmrdxpy\r\neidxrkcnvjzhpqymaulf\r\n\r\ndtlpjkfar\r\nsjtprafdyel\r\nafpgjtvlr\r\n\r\nz\r\nb\r\n\r\nrwutpgkyanm\r\nnwatgkmpuyr\r\n\r\njb\r\nbj\r\njb\r\nbj\r\njb\r\n\r\nyvcbs\r\ncsvybh\r\nbsvycu\r\ncsjrinybgpv\r\nyhsvbocw\r\n\r\ntapdxjkbuhn\r\nuqoaigmtphcfv\r\n\r\ngbrf\r\nbgrf\r\ngrfb\r\nbrfg\r\nrfbg\r\n\r\nlhj\r\nr\r\n\r\nnsuvr\r\nrntus\r\nrnmdcsu\r\nnusr\r\nusnvr\r\n\r\nmglncfrspjxqdheatkby\r\nawokdbmlvurnzjecqsyxpth\r\n\r\ndkphrovicb\r\noihkdcrvpb\r\nkcdvhbipor\r\nichrbdpvok\r\nprckhibvod\r\n\r\nobaxmnut\r\notabun\r\nhaobdtun\r\npvfnztekujcbqyoa\r\ntibmhoagun\r\n\r\nmvhtqgsxc\r\nztljokabwni\r\ntdyuefmqrp\r\n\r\ngdx\r\njnxk\r\nx\r\n\r\nbwfpeojrtnqmszhya\r\njfduwroxmenzhky\r\nmhfrjediyznwclokv\r\nhfjirnwymekgzo\r\n\r\nbzcpqi\r\nipcqbh\r\nciqpb\r\n\r\nvbnegldq\r\nebgvq\r\nequxgbv\r\n\r\npmcjwzqsrgye\r\nsvhujyprdftb\r\npjsnaryo\r\nonsrpjy\r\n\r\ndfqbynoxcgljpuhaesmvt\r\ndxhecqampgnyultfjosvb\r\ncifqxleudmvjhgaspybotn\r\nsnqvtgaphyfloxeucbdjm\r\nayetuxbogqcmfnsjvhpld\r\n\r\nwoqjbvaesrh\r\nrmjaeswobqv\r\nrqeswbjoav\r\nowebqrvajs\r\n\r\nfsgejt\r\njskg\r\n\r\nobzeufrsykvjdqg\r\njqaiozpwrmbsdxkf\r\nsjqdzfktbrlho\r\n\r\nawqldosnzykc\r\ndolsawqncz\r\nwodsqznacl\r\n\r\nohtxrakybsecjnqviwduz\r\nmwodbqsxihrajpcztygluknfve\r\n\r\nm\r\nmv\r\namq\r\nm\r\n\r\nahoubdnlywcigjt\r\ncynbhdivwtoglaju\r\n\r\nbpgewx\r\nzxpubsdwq\r\n\r\nadhjekz\r\ntzjkde\r\newkvzjd\r\ntvefjzdk\r\nejdkz\r\n\r\nuetkosjndqgxcyvm\r\nmclnrsaxjytqvdpg\r\n\r\nkbhed\r\ndix\r\nafdt\r\nd\r\n\r\nxhd\r\nhgrd\r\n\r\nrbyavgzjflhdinqesk\r\nsnkvihbalfryjzeq\r\nzhaivknreqfjsbly\r\nbrkljfziyensvaqh\r\n\r\nbokdlygwhafrc\r\nxwuronlpakqi\r\n\r\npnwsxh\r\npnrwsxh\r\n\r\nyhrqpsbjv\r\ndav\r\niwuoxlgfc\r\n\r\nhwge\r\nihwejbsv\r\nzneltwyrhfkaom\r\newxjvh\r\n\r\noxnscztqjyafr\r\nhyxnkjvwrufcm\r\npmcgrnulkfjvxy\r\nberfkxyucijn\r\nwencyxrfhlj\r\n\r\nkilhnpjvdofbatcz\r\nrhgvxiwmncfez\r\nvizhucnqfe\r\ncnhzivfu\r\n\r\numxzfpvkb\r\nvpkxumbzf\r\nxzkvmfbpu\r\nuxkfzvmpb\r\npfxvbumzk\r\n\r\nvmsdxahqipznu\r\nfupiasyvlnxjzdrhq\r\nunhagxpkvdsqzie\r\n\r\nvdwyb\r\nvyudwb\r\ncdywvu\r\nydvw\r\nvwjdayh\r\n\r\nd\r\nd\r\nd\r\n\r\nqlfcbhrvw\r\nfzrbyuc\r\n\r\njcsonk\r\nuckosn\r\nkcsno\r\n\r\nsawivom\r\nioas\r\naois\r\n\r\nweluyo\r\nqhcprdvg\r\nsbkwuy\r\nuzynje\r\nnajxiue\r\n\r\nxbrfmeznhowj\r\ntbycldqagk\r\nuivcbs\r\n\r\nuzgpwofxcaqidhntlmb\r\noidfhxgbnluzwmcptq\r\ntquhizxngoacdwfpml\r\nldztycveqghipmxsnfowuj\r\n\r\nn\r\nqn\r\n\r\nfqu\r\ndf\r\n\r\ncxpvzgfyijsaoltueqkm\r\najuxlvozygsfqpteicmk\r\nozeafkvtlqipjugyxsmc\r\n\r\nz\r\nc\r\nz\r\nr\r\nz\r\n\r\njsapzgufkmwvdibqt\r\naerhpisyudxgmvwbjo\r\npvnudbctjgfwialms\r\n\r\nauylqgmpcfbkihesz\r\nzislkfqgapebch\r\nfleshzgkqbaipc\r\nhpnszqkiatefclbwg\r\nesxlhdzvbfwkpagqci\r\n\r\nj\r\nx\r\nx\r\n\r\nvcypdnobl\r\nkfabxw\r\nwjqbig\r\nibzm\r\nkb\r\n\r\nhkodlmsgqbzjevcfayi\r\nvfyticqwblkjsuagdpozme\r\nifdqbksjrxlegomhnczvya\r\n\r\nbktgaefp\r\nrexytwau\r\n\r\nxwasezkctrov\r\npcsxbrzhdtw\r\n\r\ngzkcdewab\r\nlmd\r\nxyftvqsidhur\r\n\r\nkbvzwsdcn\r\npkbszvw\r\n\r\njsvouxke\r\nqgzi\r\nadrbyz\r\n\r\nzvqpbkanyjwgtueflcdrx\r\ncpyqrwgtjafuklzxndebv\r\nwzdgljoaycekvbptuqxnfir\r\ndjrguhfbptyxkzceavnlwq\r\n\r\nnhqgxmdsl\r\nvtzpkmqdfl\r\nuqomrjelw\r\nzflbvqm\r\nalxmq\r\n\r\nsmlxpqfh\r\ntkszqhlvm\r\nqjomlvks\r\nqwduyrbsnlim\r\n\r\nwpkcvmxuityzqgjdeofb\r\nfvkyxbjdumoptiqwgecz\r\npbdvuetqczokmxfgywij\r\nzifybkeudwvqgxjmcpot\r\n\r\nporctbafwqzedgysxljkhv\r\njxbdhgqkftnyalsopzvwce\r\nkozvgtxejlcpdhqsyfawb\r\n\r\nobduynsxf\r\ndysbxonuf\r\nfbsoduxny\r\nubycdxnofs\r\nbfysonxud\r\n\r\nhis\r\nvfxa\r\nxa\r\nfax\r\n\r\nyolm\r\nbo\r\n\r\njotsmh\r\nxfqhsbvrolc\r\nhsgdaoz\r\njotyhsu\r\nszoh\r\n\r\ndz\r\ndz\r\ndz\r\nzd\r\nzdk\r\n\r\nidykem\r\nasftdpu\r\n\r\nfbvmunwkreldcy\r\nblaqkxzvyim\r\nilbvmxjkysq\r\nlaiymvoqhbgk\r\nvpklbmyg\r\n\r\njvsmlog\r\njgwvmsplo\r\n\r\nrisldpqb\r\nlbsiprxo\r\nbsiprkl\r\n\r\nnzcybwkpah\r\nyhwcpkzna\r\nwzhcnpayk\r\n\r\nixfbamn\r\ninb\r\nubinke\r\nncbkei\r\n\r\nelchnpjkxwtqig\r\nnljgiceqahbx\r\nlcugbexhqjin\r\nidxjhmeqclgfnv\r\nfqlhcexigndj\r\n\r\nvmgcneztlbs\r\nqeblzmvcngst\r\nngbclszmvet\r\n\r\nckn\r\nc\r\nc\r\nc\r\nc\r\n\r\nyezpv\r\nwyvlez\r\n\r\nhfdtkslevcwnoxzi\r\ntsfekmdjvclihzwno\r\netsiwvnzlkfdhoc\r\nckfotsdnzivhwle\r\n\r\ne\r\ny\r\n\r\ncdbn\r\nbcnd\r\n\r\nhbupimtkawejgvfzcnoysx\r\nzfnkwbpvchoxietmujsyg\r\njmehbtwivfznkupxcsgroy\r\ngomuvnyjhwekscizbtxpf\r\nhspzxkncvfitwjguymebo\r\n\r\nqjw\r\nj\r\nrosg\r\njt\r\nqjxe\r\n\r\ns\r\njs\r\ns\r\ns\r\n\r\nsudlgxvitacpyfhkr\r\nisuvgfkrchadnj\r\ngvqfzrmdihucsak\r\nqgrodskhauficv\r\n\r\nrqefisluvyg\r\nnyjotwizfk\r\niayf\r\nyifd\r\nftyij\r\n\r\nalxbdhwiscq\r\nqgcjrwezay\r\nahwitmqdcu\r\n\r\nd\r\nd\r\nyxl\r\nd\r\n\r\nzwfdsuqc\r\ndzcw\r\ncszudw\r\nhzdlwb\r\n\r\naxv\r\nvx\r\nvx\r\nxv\r\n\r\nnrw\r\nblzfvgh\r\n\r\npe\r\nelqmzvgfk\r\ne\r\n\r\nygfk\r\nxdjnublae\r\nr\r\n\r\njvn\r\nnvj\r\njvn\r\nvjn\r\n\r\nmblaqhitwdv\r\nbljivaqxthdw\r\n\r\nd\r\ndc\r\nd\r\nd\r\nd\r\n\r\ne\r\nd\r\n\r\nvjsrl\r\njrlvqseb\r\nvlsrj\r\nlvrsj\r\n\r\ncjfta\r\najfct\r\ntjcaf\r\nfjbhatc\r\n\r\ndqbfeprkzgvt\r\ntpbfkdrqge\r\nrwaqfedxkpbgt\r\n\r\nowbmusnzvgpf\r\norgvlwkyxp\r\ntvpwohg\r\nwtgqcovp\r\ngpavywoie\r\n\r\ngczomkqlvdbn\r\naolduzmgbqvyec\r\n\r\ntynrkjlgsq\r\nqsnlytrkjg\r\nyntgklrsqj\r\ntygrlsnkqmj\r\n\r\npyfrutmwb\r\nubwnsrfy\r\nyfwrspb\r\nydvborwf\r\n\r\nqlsmcbh\r\nhqlmcsgb\r\n\r\ncowjnufayrix\r\nrqaynwxfcoj\r\nxogamefhkdjyrvwcnt\r\nafrznwocyjx\r\ncuirsyxfwloajn\r\n\r\nhtosau\r\nbvkdcr\r\n\r\newyzhgipl\r\nlwezhbingydpk\r\nhpzwmijeygl\r\nieythwpglzm\r\n\r\nozjphrbglsi\r\nrguphzjoyil\r\n\r\nb\r\no\r\nru\r\n\r\nritlagqevs\r\nitslgaw\r\ngvjsalitr\r\nuixaolkghst\r\n\r\npnjoxwlurzkytdcb\r\njucwnytzoxbrpldk\r\nlxpboczwtduykjrn\r\npyzkdnxoljvurwbct\r\nrzupcbnxkwoytljd\r\n\r\nsnpvyotqzxubard\r\nqorubpavdnxytzs\r\ntxpvazrqubnydos\r\nvaotxpszyurbgnqd\r\npzxurabtqsvnoyd\r\n\r\nwcybutsgnvxlpdjrmeko\r\nursvnedtgjbylckqwoxm\r\n\r\notac\r\ncot\r\notc\r\ntoc\r\n\r\nnp\r\nndtfblp\r\n\r\nuvaeirsy\r\nvryjispm\r\nsmuiry\r\nfzdbyqsrtig\r\nrwkmycveis\r\n\r\njhutgyv\r\njuyhtg\r\nytuhjg\r\nhutgyj\r\ntuhjyg\r\n\r\nzxwyodcm\r\ndwzyomc\r\nwmdoczy\r\nwxymojzdc\r\nylowdcmvbgz\r\n\r\ntjefad\r\nyokb\r\n\r\nakbwzocshvu\r\nkchubzawyvos\r\nzbwukohvqasc\r\nhzkbucowsav\r\nzykvhoauwbsc\r\n\r\nqsy\r\njq\r\npq\r\n\r\nbnkryxpdvswjagzhfqtil\r\nkgfawvzjinumhldqpytxrb\r\n\r\nyfdr\r\nyfrd\r\nroyfd\r\ndryf\r\n\r\nwsvptxyhcqfa\r\nfysovtqwxchpa\r\nvahfqtpsywxc\r\nwfqaptcsvhyx\r\n\r\nwezkdnqhgufvarycxijlobs\r\nrzoicqxglbfhenksjwv\r\ngwikzclbvrxsnjfoheq\r\nhwexrfocgnjvqbzklsi\r\n\r\ndm\r\nyk\r\n\r\nxyqbn\r\ncxypns\r\nhkgylf\r\n\r\nmhqunico\r\nmchio\r\nhciwosm"
+clj꞉day6.core꞉> demo-input
+"abc\n\na\nb\nc\n\nab\nac\n\na\na\na\na\n\nb"
+clj꞉day6.core꞉> 
+15745
+clj꞉day6.core꞉> 
+["xav"
+ "uavx"
+ "xavsi"
+ "yavx"
+ ""
+ "efokjptizdcwmqnuh"
+ "qgfdvurtnjwpichxk"
+ "taqkcunfzpmydiwjsh"
+ ""
+ "mzbg"
+ "tmg"
+ "rlvge"
+ "hgpbzn"
+ "cagkijyu"
+ ""
+ "ahynbmqljzpwxokcfrtsgeud"
+ "xwzcmdhkrjnupegqlyoaft"
+ "fjnurhzoqmgwacxdlypkte"
+ "qwrjxahtlnzcfdouepmkgy"
+ "ezpqxfcmgrnhylukwajotd"
+ ""
+ "jrxcnyadsgbtpvoze"
+ "secpytarvdzjgb"
+ "ycsfzgtedarbjvp"
+ "tsgejyzcdbvpra"
+ "ygtbvzredpacjs"
+ ""
+ "n"
+ "n"
+ "s"
+ "n"
+ "n"
+ ""
+ "mgfb"
+ "mfg"
+ ""
+ "xfjengy"
+ "pubw"
+ "isroqb"
+ ""
+ "hcnkeawlbfso"
+ "twocmsbefvlp"
+ "acwyseblorf"
+ "losebfcw"
+ ""
+ "dixstroacjbygqpewvk"
+ "mdcpbnfqsgxvaikwujtr"
+ ""
+ "u"
+ "uvk"
+ ...]
+clj꞉day6.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day6\src\day6\core.clj:28:6).
+; Unable to resolve symbol: remove-empty-strings in this context
+clj꞉day6.core꞉> 
+#'day6.core/remove-empty-strings
+clj꞉day6.core꞉> 
+; Execution error (NullPointerException) at day6.core/remove-newlines (core.clj:22).
+; null
+clj꞉day6.core꞉> 
+#function[clojure.core/map/fn--5862]
+clj꞉day6.core꞉> 
+; Execution error (NullPointerException) at day6.core/remove-newlines (core.clj:22).
+; null
+clj꞉day6.core꞉> 
+["xav"
+ "uavx"
+ "xavsi"
+ "yavx"
+ ""
+ "efokjptizdcwmqnuh"
+ "qgfdvurtnjwpichxk"
+ "taqkcunfzpmydiwjsh"
+ ""
+ "mzbg"
+ "tmg"
+ "rlvge"
+ "hgpbzn"
+ "cagkijyu"
+ ""
+ "ahynbmqljzpwxokcfrtsgeud"
+ "xwzcmdhkrjnupegqlyoaft"
+ "fjnurhzoqmgwacxdlypkte"
+ "qwrjxahtlnzcfdouepmkgy"
+ "ezpqxfcmgrnhylukwajotd"
+ ""
+ "jrxcnyadsgbtpvoze"
+ "secpytarvdzjgb"
+ "ycsfzgtedarbjvp"
+ "tsgejyzcdbvpra"
+ "ygtbvzredpacjs"
+ ""
+ "n"
+ "n"
+ "s"
+ "n"
+ "n"
+ ""
+ "mgfb"
+ "mfg"
+ ""
+ "xfjengy"
+ "pubw"
+ "isroqb"
+ ""
+ "hcnkeawlbfso"
+ "twocmsbefvlp"
+ "acwyseblorf"
+ "losebfcw"
+ ""
+ "dixstroacjbygqpewvk"
+ "mdcpbnfqsgxvaikwujtr"
+ ""
+ "u"
+ "uvk"
+ ...]
+clj꞉day6.core꞉> (count "")
+0
+clj꞉day6.core꞉> (->> (s/split real-input #"\r\n") (map remove-empty-strings))
+("xav"
+ "uavx"
+ "xavsi"
+ "yavx"
+ nil
+ "efokjptizdcwmqnuh"
+ "qgfdvurtnjwpichxk"
+ "taqkcunfzpmydiwjsh"
+ nil
+ "mzbg"
+ "tmg"
+ "rlvge"
+ "hgpbzn"
+ "cagkijyu"
+ nil
+ "ahynbmqljzpwxokcfrtsgeud"
+ "xwzcmdhkrjnupegqlyoaft"
+ "fjnurhzoqmgwacxdlypkte"
+ "qwrjxahtlnzcfdouepmkgy"
+ "ezpqxfcmgrnhylukwajotd"
+ nil
+ "jrxcnyadsgbtpvoze"
+ "secpytarvdzjgb"
+ "ycsfzgtedarbjvp"
+ "tsgejyzcdbvpra"
+ "ygtbvzredpacjs"
+ nil
+ "n"
+ "n"
+ "s"
+ "n"
+ "n"
+ nil
+ "mgfb"
+ "mfg"
+ nil
+ "xfjengy"
+ "pubw"
+ "isroqb"
+ nil
+ "hcnkeawlbfso"
+ "twocmsbefvlp"
+ "acwyseblorf"
+ "losebfcw"
+ nil
+ "dixstroacjbygqpewvk"
+ "mdcpbnfqsgxvaikwujtr"
+ nil
+ "u"
+ "uvk"
+ ...)
+clj꞉day6.core꞉> 
+; Execution error (NullPointerException) at day6.core/remove-newlines (core.clj:22).
+; null
+clj꞉day6.core꞉> (set nil)
+#{}
+clj꞉day6.core꞉> (count (set nil))
+0
+clj꞉day6.core꞉> 
+; Execution error (NullPointerException) at day6.core/remove-newlines (core.clj:22).
+; null
+clj꞉day6.core꞉> 
+15745
+clj꞉day6.core꞉> 
+7939
+clj꞉day6.core꞉> 
+7443
+clj꞉day6.core꞉> 
+7939
+clj꞉day6.core꞉> (take 5 (s/split real-input #"\r\n\r\n"))
+("xav\r\nuavx\r\nxavsi\r\nyavx"
+ "efokjptizdcwmqnuh\r\nqgfdvurtnjwpichxk\r\ntaqkcunfzpmydiwjsh"
+ "mzbg\r\ntmg\r\nrlvge\r\nhgpbzn\r\ncagkijyu"
+ "ahynbmqljzpwxokcfrtsgeud\r\nxwzcmdhkrjnupegqlyoaft\r\nfjnurhzoqmgwacxdlypkte\r\nqwrjxahtlnzcfdouepmkgy\r\nezpqxfcmgrnhylukwajotd"
+ "jrxcnyadsgbtpvoze\r\nsecpytarvdzjgb\r\nycsfzgtedarbjvp\r\ntsgejyzcdbvpra\r\nygtbvzredpacjs")
+clj꞉day6.core꞉> 
+7443
+clj꞉day6.core꞉> 
+; Evaluating file: core.clj
+#{\a \b \c \newline}
+clj꞉day6.core꞉> 
+#'day6.core/remove-newlines
+clj꞉day6.core꞉> 
+6947
+clj꞉day6.core꞉> 

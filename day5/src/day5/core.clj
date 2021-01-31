@@ -69,12 +69,24 @@
 
 (def parsed-data-map (map create-row-column-id-map real-input))
 
-(def id-map (map (fn [data-map] (:id data-map)) parsed-data-map))
+(def id-seq (map (fn [data-map] (:id data-map)) parsed-data-map))
 (def sorted-list (sort id-map))
 
 (defn find-missing-seat [num-seq]
   (loop [remaining-seq num-seq]
     (if (not=  (- (second remaining-seq) (first remaining-seq)) 1)
-      (+ (first remaining-seq) 1)
+      (inc (first remaining-seq))
       (recur (rest remaining-seq)))))
+
+(partition-all  2 1 (sort id-seq))
+
+;; Lambda Island Solution
+
+(def char->binary {\B 1 \F 0 \L 0 \R 1})
+(let [[row col] (partition-all 7 "BFFFBBFRRR")]
+  (Long/parseLong (apply str (map char->binary col)) 2))
+
+
+2r0111001
+2r1000110
 
