@@ -27,6 +27,8 @@ namespace Day01
       }
     }
 
+
+
     static int Solve(IEnumerable<int> ints, int howManyIntsToSum, int requiredSum)
     {
       if (howManyIntsToSum == 0 || !ints.Any()) return 0;
