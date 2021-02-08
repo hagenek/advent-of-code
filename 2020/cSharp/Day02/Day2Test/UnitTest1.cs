@@ -8,19 +8,24 @@ namespace Day2Test
     public void Setup()
     {
     }
-
+        
     [Test]
-    public void Valid_Pwd_Is_Valid()
+    [TestCase("1-3 a: abcde")]
+    [TestCase("2-9 c: ccccccccc")]
+    public void Valid_Pwd_Is_Valid(string password)
     {
       var validator = new PasswordValidator();
-      Assert.IsTrue(validator.Validate("abc123"));
+      var result = validator.Validate(password);
+      Assert.IsTrue(result);
     }
 
-            [Test]
-    public void Invalid_Password_Is_Invalid()
+    [Test]
+    [TestCase("1-3 b: cdefg")]
+    public void Invalid_Password_Is_Invalid(string password)
     {
-      var validator = new PasswordValidator();
-      Assert.IsFalse(validator.Validate("lolol123"));
+        var validator = new PasswordValidator();
+        var result = validator.Validate(password);
+        Assert.IsFalse(result);
     }
   }
 }
