@@ -10,9 +10,32 @@ namespace Day01
   {
     static void Main(string[] args)
     {
-      var ints = File.ReadAllLines("input.txt")
-        .Select(s => Int32.Parse(s)).ToList();
-      SolvePart2(ints);
+      try
+      {
+        var ints = File.ReadAllLines("input.txt")
+          .Select(s => Int32.Parse(s)).ToList();
+
+        var howManyIntsToSum = 3;
+        var requiredSum = 2020;
+
+        var solution = Solve(ints, howManyIntsToSum, requiredSum);
+        Console.WriteLine(solution);
+      }
+      catch (Exception ex)
+      {
+        Console.Error.WriteLine(ex.Message);
+      }
+    }
+
+    static int Solve(IEnumerable<int> ints, int howManyIntsToSum, int requiredSum)
+    {
+      if (howManyIntsToSum == 0 || !ints.Any()) return 0;
+      var head = ints.First();
+      var tail = ints.Skip(1);
+      if (howManyIntsToSum == 1 && head == requiredSum) return head;
+      var result = head * Solve(ints.Skip(1), howManyIntsToSum - 1, requiredSum - head);
+      if (result != 0) return result;
+      return Solve(tail, howManyIntsToSum, requiredSum);
     }
 
     static int SolvePart2(List<int> ints)
