@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj": {}
+    "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\day02code\\Day02Code.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj": {
+    "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\day02code\\Day02Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj",
+        "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\day02code\\Day02Code.csproj",
         "projectName": "Day02Code",
-        "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj",
+        "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\day02code\\Day02Code.csproj",
         "packagesPath": "C:\\Users\\Georg H. Ekeberg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\obj\\",
+        "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\day02code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Georg H. Ekeberg\\AppData\\Roaming\\NuGet\\NuGet.Config",

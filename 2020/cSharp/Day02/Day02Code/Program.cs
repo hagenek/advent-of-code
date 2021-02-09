@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 
 namespace Day02Code
 {
@@ -6,7 +8,12 @@ namespace Day02Code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var validator = new PasswordValidator();
+            var count = File.ReadAllLines("input.txt").Where(validator.Validate).Count();
+            var count2 = File.ReadAllLines("input.txt").Where(validator.Validate2).Count();
+            Console.WriteLine("Number of valid passwords: " + count);
+            Console.WriteLine("Number of valid part 2 passwords: " + count2);
+            Console.WriteLine("12345"[1]);
         }
     }
 }
