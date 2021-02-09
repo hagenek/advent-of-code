@@ -54,7 +54,6 @@ namespace Day02Code
             
             var firstCase = this.Password[this.Digit1] == this.Letter;
             var secondCase = this.Password[this.Digit2] == this.Letter;
-
             return (firstCase ^ secondCase);
         }
     }

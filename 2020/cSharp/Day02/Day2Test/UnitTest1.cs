@@ -32,8 +32,8 @@ namespace Day2Test
     }
     // Policy number two tests
     [Test]
-    [TestCase("1-3 b: bdbfg")]
-    [TestCase("3-5 e: bdefe")]
+    [TestCase("1-3 b: bdffg")]
+    [TestCase("3-5 e: bdefqe")]
     public void Valid_Password_Is_Valid(string password)
     {
         var validator = new PasswordValidator();

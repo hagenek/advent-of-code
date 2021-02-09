@@ -13,7 +13,6 @@ namespace Day02Code
             var count2 = File.ReadAllLines("input.txt").Where(pwd => validator.IsValid(pwd, 2)).Count();
             Console.WriteLine("Number of valid passwords: " + count);
             Console.WriteLine("Number of valid part 2 passwords: " + count2);
-            Console.WriteLine("12345"[1]);
         }
     }
 }
