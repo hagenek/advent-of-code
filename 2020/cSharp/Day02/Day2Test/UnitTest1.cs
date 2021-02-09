@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Day02Code;
 
 namespace Day2Test
 {
@@ -17,7 +18,7 @@ namespace Day2Test
     public void Valid_Pwd_Is_Valid(string password)
     {
       var validator = new PasswordValidator();
-      var result = validator.Validate(password);
+      var result = validator.IsValid(password, 1);
       Assert.IsTrue(result);
     }
 
@@ -26,17 +27,17 @@ namespace Day2Test
     public void Invalid_Password_Is_Invalid(string password)
     {
         var validator = new PasswordValidator();
-        var result = validator.Validate(password);
+        var result = validator.IsValid(password, 1);
         Assert.IsFalse(result);
     }
-
+    // Policy number two tests
     [Test]
     [TestCase("1-3 b: bdbfg")]
     [TestCase("3-5 e: bdefe")]
     public void Valid_Password_Is_Valid(string password)
     {
         var validator = new PasswordValidator();
-        var result = validator.Validate2(password);
+        var result = validator.IsValid(password, 2);
         Assert.IsTrue(result);
     }
   }

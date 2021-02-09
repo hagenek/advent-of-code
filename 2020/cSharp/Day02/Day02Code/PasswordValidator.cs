@@ -2,44 +2,83 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
-public class PasswordValidator
+namespace Day02Code
 {
-    // [TestCase("1-3 a: abcde")]
-    // [TestCase("2-9 c: ccccccccc")]
+    public abstract class Policy
+    {
+        public int Digit1 { get; set; }
+        public int Digit2 { get; set; }
+        public char Letter { get; set; }
+        public string Password { get; set; }
 
-  public bool Validate(string input)
-  {
-      var pair = input.Split(":");
-      var policy = pair[0];
-      var password = pair[1];
+        protected Policy(string input)
+        {
+            var pair = input.Split(":");
+            var policy = pair[0];
+            var bits = policy.Split(" ");
+            var digits = bits[0].Split("-").Select(Int32.Parse).ToArray();
 
-      var bits = policy.Split(" ");
-      var digits = bits[0].Split("-").Select(Int32.Parse).ToArray();
+            this.Password = pair[1];
 
-      var letter = bits[1][0];
+            this.Digit1 = digits[0];
+            this.Digit2 = digits[1];
+            this.Letter = bits[1][0];
+        }
 
-      var count = password.Count(c => c == letter);
-      if (count < digits[0]) return (false);
-      if (count > digits[1]) return (false);
-      return true;
-  }
+        public abstract bool IsValid();
+    }
 
-  public bool Validate2(string input)
-  {
-      var pair = input.Split(":");
-      var policy = pair[0];
-      var password = pair[1];
+    public class Part1Policy : Policy
+    {
+        public Part1Policy (string input) : base(input)
+        {
+        }
 
-      var bits = policy.Split(" ");
-      var digits = bits[0].Split("-").Select(Int32.Parse).ToArray();
+        public override bool IsValid()
+        {
+            var count = this.Password.Count(c => c == this.Letter);
+            if (count < this.Digit1) return false;
+            if (count > this.Digit2) return false;
+            return true;
+        }
+    }
 
-      var letter = bits[1][0];
+    public class Part2Policy : Policy
+    {
+        public Part2Policy (string input) : base(input)
+        {
+        }
 
-      var firstCase = password[(digits[0])] == letter;
-      var secondCase = password[(digits[1])] == letter;
+        public override bool IsValid()
+        {
+            
+            var firstCase = this.Password[this.Digit1] == this.Letter;
+            var secondCase = this.Password[this.Digit2] == this.Letter;
 
-      return (firstCase ^ secondCase);
+            return (firstCase ^ secondCase);
+        }
+    }
 
-  }
+    public class PasswordValidator
+    {
+
+        public bool IsValid(string input, int policyNum)
+        {
+            if (policyNum == 1)
+            {
+                var p = new Part1Policy(input);
+            return p.IsValid();
+            } else if (policyNum == 2)
+            {
+                var p = new Part2Policy(input);
+                return p.IsValid();
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+    }
+
 }
-

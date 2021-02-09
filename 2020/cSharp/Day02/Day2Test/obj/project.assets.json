@@ -4665,11 +4665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day2Test\\Day2Test.csproj",
+      "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day2Test\\Day2Test.csproj",
       "projectName": "Day2Test",
-      "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day2Test\\Day2Test.csproj",
+      "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day2Test\\Day2Test.csproj",
       "packagesPath": "C:\\Users\\Georg H. Ekeberg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day2Test\\obj\\",
+      "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day2Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Georg H. Ekeberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4686,8 +4686,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj": {
-              "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day02Code\\Day02Code.csproj"
+            "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day02Code\\Day02Code.csproj": {
+              "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day02Code\\Day02Code.csproj"
             }
           }
         }

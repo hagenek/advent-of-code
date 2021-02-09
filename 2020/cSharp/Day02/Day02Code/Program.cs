@@ -9,8 +9,8 @@ namespace Day02Code
         static void Main(string[] args)
         {
             var validator = new PasswordValidator();
-            var count = File.ReadAllLines("input.txt").Where(validator.Validate).Count();
-            var count2 = File.ReadAllLines("input.txt").Where(validator.Validate2).Count();
+            var count = File.ReadAllLines("input.txt").Where(pwd => validator.IsValid(pwd, 1)).Count();
+            var count2 = File.ReadAllLines("input.txt").Where(pwd => validator.IsValid(pwd, 2)).Count();
             Console.WriteLine("Number of valid passwords: " + count);
             Console.WriteLine("Number of valid part 2 passwords: " + count2);
             Console.WriteLine("12345"[1]);

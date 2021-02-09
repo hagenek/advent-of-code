@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hW/xfcXsXohqw4VYpZcuFQscTpjDvEyAjnukYHUE5rm9a86bH94mknIf4ryUgRy6RSCvLbQxKHnT3Pjc+l0SHw==",
+  "dgSpecHash": "VaHDNEYcjMB09Y9G1xgH6WNPvUlUONBPJ8dWd0VFGU9URIf6zY2oclIuBGuAkDVV0F2D0jkUsbMGsYH3p8Kvvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day02\\Day2Test\\Day2Test.csproj",
+  "projectFilePath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day02\\Day2Test\\Day2Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Georg H. Ekeberg\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Georg H. Ekeberg\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
