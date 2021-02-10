@@ -1,0 +1,16 @@
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.csprojAssemblyReference.cache
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.AssemblyInfoInputs.cache
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.AssemblyInfo.cs
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.csproj.CoreCompileInputs.cache
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.exe
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.deps.json
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.runtimeconfig.json
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.runtimeconfig.dev.json
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.dll
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\ref\Day03.dll
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\bin\Debug\net5.0\Day03.pdb
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.dll
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\ref\Day03.dll
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.pdb
+C:\Users\Georg H. Ekeberg\repos\advent-of-code\2020\cSharp\Day03\obj\Debug\net5.0\Day03.genruntimeconfig.cache

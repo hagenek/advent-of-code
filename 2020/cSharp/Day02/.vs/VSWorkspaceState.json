@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Day02Code",
-    "\\Day2Test"
+    "\\Day2Test",
+    "\\Day2Test\\bin",
+    "\\Day2Test\\bin\\Debug",
+    "\\Day2Test\\bin\\Debug\\net5.0",
+    "\\Day2Test\\bin\\Debug\\net5.0\\ru"
   ],
-  "SelectedNode": "\\Day02Code\\Program.cs",
+  "SelectedNode": "\\Day2Test\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
