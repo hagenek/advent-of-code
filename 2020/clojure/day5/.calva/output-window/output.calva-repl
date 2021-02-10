@@ -1,0 +1,190 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.8.3"] -- update-in :plugins conj [cider/cider-nrepl,"0.25.8"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉day5.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:81:1).
+; Unable to resolve symbol: partial-all in this context
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:81:1).
+; Unable to resolve symbol: partial-all in this context
+clj꞉day5.core꞉> 
+; Execution error (ClassCastException) at day5.core/eval7351 (form-init4675184907435641621.clj:81).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉day5.core꞉> 
+; Execution error (ClassCastException) at day5.core/eval7353 (form-init4675184907435641621.clj:81).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉day5.core꞉> 
+; Execution error (ClassCastException) at day5.core/eval7355 (form-init4675184907435641621.clj:84).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:84:1).
+; Unable to resolve symbol: partial-all in this context
+clj꞉day5.core꞉> 
+; Execution error (ClassCastException) at day5.core/eval7358 (form-init4675184907435641621.clj:84).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉day5.core꞉> 
+; Execution error (ClassCastException) at day5.core/eval7360 (form-init4675184907435641621.clj:84).
+; class clojure.lang.StringSeq cannot be cast to class java.lang.Number (clojure.lang.StringSeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉day5.core꞉> 
+((\B \F \F \F \B \B \F) (\R \R \R))
+clj꞉day5.core꞉> 
+57
+clj꞉day5.core꞉> 
+78
+clj꞉day5.core꞉> 
+57
+clj꞉day5.core꞉> 
+78
+clj꞉day5.core꞉> 
+206
+clj꞉day5.core꞉> 
+57
+clj꞉day5.core꞉> 
+78
+clj꞉day5.core꞉> 
+70
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:88:1).
+; Unable to resolve symbol: char->binary in this context
+clj꞉day5.core꞉> 
+; Syntax error compiling at (c:\Users\Georg H. Ekeberg\repos\advent-of-code\day5\src\day5\core.clj:88:1).
+; Unable to resolve symbol: char->binary in this context
+clj꞉day5.core꞉> 
+#'day5.core/char->binary
+clj꞉day5.core꞉> 
+(1 1 1)
+clj꞉day5.core꞉> 
+"111"
+clj꞉day5.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉day5.core꞉> 
+#'day5.core/id-seq
+clj꞉day5.core꞉> id-seq
+(565N
+ 282N
+ 527N
+ 451N
+ 172N
+ 411N
+ 388N
+ 564N
+ 852N
+ 524N
+ 143N
+ 805N
+ 816N
+ 336N
+ 769N
+ 228N
+ 151N
+ 562N
+ 755N
+ 656N
+ 154N
+ 165N
+ 185N
+ 105N
+ 114N
+ 368N
+ 393N
+ 572N
+ 222N
+ 313N
+ 358N
+ 480N
+ 161N
+ 529N
+ 467N
+ 263N
+ 182N
+ 569N
+ 404N
+ 540N
+ 454N
+ 833N
+ 437N
+ 79N
+ 730N
+ 459N
+ 819N
+ 216N
+ 638N
+ 428N
+ ...)
+clj꞉day5.core꞉>  (type id-seq)
+clojure.lang.LazySeq
+clj꞉day5.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉day5.core꞉> 
+((75N 76N)
+ (76N 77N)
+ (77N 78N)
+ (78N 79N)
+ (79N 80N)
+ (80N 81N)
+ (81N 82N)
+ (82N 83N)
+ (83N 84N)
+ (84N 85N)
+ (85N 86N)
+ (86N 87N)
+ (87N 88N)
+ (88N 89N)
+ (89N 90N)
+ (90N 91N)
+ (91N 92N)
+ (92N 93N)
+ (93N 94N)
+ (94N 95N)
+ (95N 96N)
+ (96N 97N)
+ (97N 98N)
+ (98N 99N)
+ (99N 100N)
+ (100N 101N)
+ (101N 102N)
+ (102N 103N)
+ (103N 104N)
+ (104N 105N)
+ (105N 106N)
+ (106N 107N)
+ (107N 108N)
+ (108N 109N)
+ (109N 110N)
+ (110N 111N)
+ (111N 112N)
+ (112N 113N)
+ (113N 114N)
+ (114N 115N)
+ (115N 116N)
+ (116N 117N)
+ (117N 118N)
+ (118N 119N)
+ (119N 120N)
+ (120N 121N)
+ (121N 122N)
+ (122N 123N)
+ (123N 124N)
+ (124N 125N)
+ ...)
+clj꞉day5.core꞉> 
+#'day5.core/find-missing-seat
+clj꞉day5.core꞉> 
