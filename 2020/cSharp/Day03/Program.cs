@@ -18,13 +18,11 @@ namespace Day03 {
                 new Vector(1, 2)
             };
 
-            var input = File.ReadAllLines("input.txt");
-            var mountain = new Mountain(input);
+            var mountain = new Mountain("input.txt");
             var trees2 = mountain.CountTrees(new Vector(3,1));
 
-            var treeCounts = vectors.Select(v => mountain.CountTrees(v));
-
-            var total = treeCounts.Aggregate((x, y) => x * y);
+            var treeCountsSeq = vectors.Select(v => mountain.CountTrees(v));
+            var total = treeCountsSeq.Aggregate((x, y) => x * y);
 
             Console.WriteLine(total);
 

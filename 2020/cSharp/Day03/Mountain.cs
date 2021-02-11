@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.IO;
+using System.Collections.Generic;
 
 namespace Day03
 {
@@ -14,29 +16,29 @@ namespace Day03
         public int Y { get; set; }
     }
     public class Mountain
-    {  
+    {
+        private readonly IEnumerable<string> lines;
 
-        public Mountain(string[] input) {
-            this.Cells = input
-                .Select(line => line
-                    .Select(c => c == '#' ? 1 : 0).ToArray())
-                .ToArray(); 
+        public Mountain(string filename)
+        {
+            this.lines = File.ReadLines(filename);
+
         }
-
-        public int[][] Cells { get; set; }
-
-        private int Height => this.Cells.Length;
-        private int MapWidth => this.Cells[0].Length;
 
         public long CountTrees(Vector v)
         {
 
             long treeCount = 0;
-            var x = 0;
-                
-            for (var y = 0; y < this.Height; y += v.Y) {
-                treeCount += this.Cells[y][x];
-                x = (x + v.X) % this.MapWidth;
+
+            int x = 0;
+            int y = 0;
+
+            foreach (var line in lines)
+            {
+                if (y++ % v.Y != 0) continue;
+                var isTree = line[x] == '#';
+                if (isTree) treeCount++;
+                x += (x + v.X) % line.Length;
             }
 
             return treeCount;
