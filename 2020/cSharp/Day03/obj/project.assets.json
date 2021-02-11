@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day03\\Day03.csproj",
+      "projectUniqueName": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day03\\Day03.csproj",
       "projectName": "Day03",
-      "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day03\\Day03.csproj",
+      "projectPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day03\\Day03.csproj",
       "packagesPath": "C:\\Users\\Georg H. Ekeberg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day03\\obj\\",
+      "outputPath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\day03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Georg H. Ekeberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

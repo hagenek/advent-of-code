@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kBd7S9BfzsfWOgu7wG+WAx+YE/PKI5UDosol1wMWwXsc+aowcwBOQdtxZ5EBNcQMZqnqRCUT8c7SQpFx5ZadSQ==",
+  "dgSpecHash": "Or4YEAoE3YPEVLRLhZTi20pNnlBDSqgwwXajdsU8mMIhFxJCKWcG2K8iggV4Yni4I2zy5BLG/GrubJTwT7UJsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\cSharp\\Day03\\Day03.csproj",
+  "projectFilePath": "C:\\Users\\Georg H. Ekeberg\\repos\\advent-of-code\\2020\\csharp\\Day03\\Day03.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

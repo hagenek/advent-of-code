@@ -19,12 +19,12 @@
 
 (defn input->map [input]
   (mapv (fn [row]
-        (mapv {\# true \. false} row))
-        (str/split input #"\n")))
+          (mapv {\# true \. false} row))
+        (str/split input #"\r\n")))
 
 (defn tree? [m x y]
   (let [width (count (first m))]
-    (get-in m [y (mod x width )])))
+    (get-in m [y (mod x width)])))
 
 (defn sled [[down-x down-y] [my-map x y trees]]
   (let [x (+ x down-x)
@@ -37,19 +37,19 @@
       (true? tree?)
       [my-map x y (inc trees)]
 
-      :else 
+      :else
       [my-map x y trees])))
 
 (defn sled-down [slope input]
   @(first
-    (drop-while 
+    (drop-while
      (complement reduced?)
      (iterate (partial sled slope) [(input->map input) 0 0 0]))))
 
-(sled-down [3 1] demo-input) 
+(sled-down [3 1] demo-input)
 ;; => 7
 
-(sled-down [3 1] real-input)
+(sled-down [5 1] real-input)
 ;; 280
 
 (def slopes [[1 1]
@@ -63,4 +63,4 @@
 
 
 
-  
+
