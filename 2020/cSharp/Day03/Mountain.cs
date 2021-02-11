@@ -38,7 +38,7 @@ namespace Day03
                 if (y++ % v.Y != 0) continue;
                 var isTree = line[x] == '#';
                 if (isTree) treeCount++;
-                x += (x + v.X) % line.Length;
+                x = (x + v.X) % line.Length;
             }
 
             return treeCount;
