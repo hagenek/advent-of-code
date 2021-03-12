@@ -1,0 +1,252 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.25.8"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉day7.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:4:29).
+; No such namespace: io
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:5:29).
+; No such namespace: io
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:5:29).
+; No such namespace: io
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+; Execution error (ClassCastException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; class java.lang.String cannot be cast to class java.io.BufferedReader (java.lang.String and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉day7.core꞉> 
+#'day7.core/input
+clj꞉day7.core꞉> 
+("faded yellow bags contain 4 mirrored fuchsia bags, 4 dotted indigo bags, 3 faded orange bags, 5 plaid crimson bags."
+ "striped olive bags contain 4 dark crimson bags."
+ "dotted indigo bags contain 4 faded black bags, 4 clear cyan bags, 5 vibrant teal bags."
+ "plaid crimson bags contain 3 shiny gold bags, 3 plaid gray bags."
+ "muted fuchsia bags contain 3 shiny bronze bags."
+ "plaid gray bags contain no other bags."
+ "dull maroon bags contain 2 posh maroon bags, 3 wavy aqua bags, 2 faded white bags, 5 posh bronze bags."
+ "dull red bags contain 3 striped silver bags, 2 dark tan bags."
+ "muted lavender bags contain 3 striped red bags."
+ "shiny lime bags contain 1 dotted olive bag."
+ "dim violet bags contain 5 faded orange bags, 4 plaid green bags, 1 faded black bag."
+ "wavy indigo bags contain 4 bright aqua bags, 2 dotted orange bags, 2 vibrant yellow bags."
+ "vibrant purple bags contain 3 plaid indigo bags, 3 dark gold bags, 3 striped yellow bags, 3 light tomato bags."
+ "plaid plum bags contain 1 faded silver bag."
+ "striped teal bags contain 2 shiny crimson bags, 1 dull gray bag, 3 vibrant teal bags."
+ "posh crimson bags contain 2 light violet bags."
+ "pale maroon bags contain 2 wavy maroon bags, 1 dotted white bag."
+ "drab cyan bags contain 4 dim violet bags, 5 pale tan bags, 3 faded black bags."
+ "bright black bags contain 2 faded magenta bags."
+ "dotted green bags contain 3 muted cyan bags."
+ "striped chartreuse bags contain 5 posh silver bags, 5 wavy violet bags."
+ "drab olive bags contain 5 dull blue bags."
+ "drab green bags contain 2 vibrant violet bags, 2 dim violet bags, 2 light brown bags."
+ "dark violet bags contain 5 drab brown bags, 4 dim chartreuse bags, 4 dark salmon bags."
+ "faded orange bags contain 4 dull lavender bags."
+ "dark fuchsia bags contain 2 clear tomato bags."
+ "plaid gold bags contain 3 clear tomato bags."
+ "muted red bags contain 1 muted green bag."
+ "dark coral bags contain 5 muted white bags, 3 mirrored indigo bags, 1 shiny blue bag, 2 drab green bags."
+ "dark chartreuse bags contain 2 bright teal bags."
+ "dim silver bags contain 4 shiny white bags, 2 vibrant plum bags, 3 clear plum bags."
+ "clear silver bags contain 1 dull gray bag."
+ "pale gray bags contain no other bags."
+ "plaid chartreuse bags contain 3 dull brown bags."
+ "dotted crimson bags contain 3 pale olive bags, 2 pale black bags."
+ "dark blue bags contain 1 light red bag, 5 striped turquoise bags."
+ "dim white bags contain 5 bright white bags, 4 light magenta bags, 4 wavy chartreuse bags."
+ "striped magenta bags contain 3 dull coral bags."
+ "drab bronze bags contain 4 bright red bags."
+ "light gray bags contain 1 mirrored coral bag."
+ "wavy brown bags contain 4 clear lime bags, 1 plaid lavender bag, 1 faded lavender bag."
+ "bright violet bags contain 5 clear indigo bags, 1 plaid indigo bag, 3 light beige bags."
+ "drab tan bags contain 4 drab chartreuse bags."
+ "shiny teal bags contain 1 bright tan bag."
+ "dark silver bags contain 1 drab orange bag, 1 striped plum bag, 2 bright gold bags."
+ "wavy turquoise bags contain 3 striped gray bags, 1 dotted lime bag, 4 pale plum bags, 2 vibrant orange bags."
+ "wavy red bags contain 1 dim gold bag, 1 striped turquoise bag, 1 bright red bag."
+ "mirrored yellow bags contain 5 faded cyan bags, 2 wavy green bags."
+ "wavy blue bags contain 5 dark violet bags, 4 vibrant gray bags."
+ "mirrored olive bags contain 5 faded orange bags, 2 posh aqua bags, 3 dotted silver bags, 2 striped plum bags."
+ ...)
+clj꞉day7.core꞉> 
+#'day7.core/demo-input
+clj꞉day7.core꞉> 
+("light red bags contain 1 bright white bag, 2 muted yellow bags."
+ "dark orange bags contain 3 bright white bags, 4 muted yellow bags."
+ "bright white bags contain 1 shiny gold bag."
+ "muted yellow bags contain 2 shiny gold bags, 9 faded blue bags."
+ "shiny gold bags contain 1 dark olive bag, 2 vibrant plum bags."
+ "dark olive bags contain 3 faded blue bags, 4 dotted black bags."
+ "vibrant plum bags contain 5 faded blue bags, 6 dotted black bags."
+ "faded blue bags contain no other bags."
+ "dotted black bags contain no other bags.")
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:9:3).
+; No such namespace: str
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:10:3).
+; No such namespace: s
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+["vibrant plum bags " " 5 faded blue bags" " 6 dotted black bags."]
+clj꞉day7.core꞉> 
+["vibrant plum bags" "5 faded blue bags, 6 dotted black bags."]
+clj꞉day7.core꞉> 
+"vibrant plum bags"
+clj꞉day7.core꞉> 
+; Syntax error macroexpanding clojure.core/let at (src/day7/core.clj:9:1).
+; [s "vibrant plum bags contain 5 faded blue bags, 6 dotted black bags." [bag & deps (s/split s #"\s(contain|,)\s?")] color (re-find #"\w+ \w+" bag)] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+"vibrant plum"
+clj꞉day7.core꞉> 
+"vibrant plum bags"
+clj꞉day7.core꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: day7.core/eval7188/fn--7189
+clj꞉day7.core꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: day7.core/eval7195/fn--7196
+clj꞉day7.core꞉> 
+(nil)
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:13:3).
+; Unable to resolve symbol: deps in this context
+clj꞉day7.core꞉> 
+(nil)
+clj꞉day7.core꞉> 
+(nil)
+clj꞉day7.core꞉> 
+#'day7.core/find-first-word
+clj꞉day7.core꞉> 
+"this"
+clj꞉day7.core꞉> 
+#'day7.core/find-first-word
+clj꞉day7.core꞉> 
+["this is" "this is"]
+clj꞉day7.core꞉> 
+#'day7.core/find-first-word
+clj꞉day7.core꞉> 
+["this is four" "this" "is four"]
+clj꞉day7.core꞉> 
+#'day7.core/find-first-word
+clj꞉day7.core꞉> 
+#'day7.core/find-count-and-color
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:15:3).
+; Unable to resolve symbol: find-cuont-and-color in this context
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"])
+clj꞉day7.core꞉> 
+("5 faded blue bags, 6 dotted black bags.")
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"])
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+("5 faded blue bags, 6 dotted black bags.")
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+["5 faded blue" "5" "faded blue"]
+clj꞉day7.core꞉> 
+("5 faded blue bags, 6 dotted black bags.")
+clj꞉day7.core꞉> 
+("5 faded blue bags, 6 dotted black bags.")
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"])
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"] ["6 dotted black" "6" "dotted black"])
+clj꞉day7.core꞉> 
+("5 faded blue bags" "6 dotted black bags.")
+clj꞉day7.core꞉> 
+; Syntax error compiling at (src/day7/core.clj:15:28).
+; Unable to resolve symbol: deps in this context
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"] ["6 dotted black" "6" "dotted black"])
+clj꞉day7.core꞉> 
+(("5" "faded blue") ("6" "dotted black"))
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"] ["6 dotted black" "6" "dotted black"])
+clj꞉day7.core꞉> 
+(("5" "faded blue") ("6" "dotted black"))
+clj꞉day7.core꞉> 
+("5 faded blue bags" "6 dotted black bags.")
+clj꞉day7.core꞉> 
+(("5" "faded blue") ("6" "dotted black"))
+clj꞉day7.core꞉> 
+(["5 faded blue" "5" "faded blue"] ["6 dotted black" "6" "dotted black"])
+clj꞉day7.core꞉> 
+(("5" "faded blue") ("6" "dotted black"))
+clj꞉day7.core꞉> 
+(("5" "faded blue") ("6" "dotted black"))
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+()
+clj꞉day7.core꞉> 
+#'day7.core/parse-entry
+clj꞉day7.core꞉> 
+#'day7.core/parse-entry
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+("light red bags contain 1 bright white bag, 2 muted yellow bags."
+ "dark orange bags contain 3 bright white bags, 4 muted yellow bags."
+ "bright white bags contain 1 shiny gold bag."
+ "muted yellow bags contain 2 shiny gold bags, 9 faded blue bags."
+ "shiny gold bags contain 1 dark olive bag, 2 vibrant plum bags."
+ "dark olive bags contain 3 faded blue bags, 4 dotted black bags."
+ "vibrant plum bags contain 5 faded blue bags, 6 dotted black bags."
+ "faded blue bags contain no other bags."
+ "dotted black bags contain no other bags.")
+clj꞉day7.core꞉> 
+nil
+clj꞉day7.core꞉> 
+"light red bags contain 1 bright white bag, 2 muted yellow bags."
+clj꞉day7.core꞉> 
+clojure.lang.Cons
+clj꞉day7.core꞉> 
+(nil nil nil nil nil nil nil nil nil)
+clj꞉day7.core꞉> 
+#'day7.core/parse-entry
+clj꞉day7.core꞉> 
+(nil nil nil nil nil nil nil nil nil)
+clj꞉day7.core꞉> 
+#'day7.core/parse-entry
+clj꞉day7.core꞉> 
+["vibrant plum bags" (("5" "faded blue") ("6" "dotted black"))]
+clj꞉day7.core꞉> 
+(["light red bags" (("1" "bright white") ("2" "muted yellow"))]
+ ["dark orange bags" (("3" "bright white") ("4" "muted yellow"))]
+ ["bright white bags" (("1" "shiny gold"))]
+ ["muted yellow bags" (("2" "shiny gold") ("9" "faded blue"))]
+ ["shiny gold bags" (("1" "dark olive") ("2" "vibrant plum"))]
+ ["dark olive bags" (("3" "faded blue") ("4" "dotted black"))]
+ ["vibrant plum bags" (("5" "faded blue") ("6" "dotted black"))]
+ ["faded blue bags" ()]
+ ["dotted black bags" ()])
+clj꞉day7.core꞉> 
+#'day7.core/color-graph
+clj꞉day7.core꞉> 
